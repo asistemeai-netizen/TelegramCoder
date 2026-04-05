@@ -7,6 +7,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as http from 'http';
 import { GoogleGenerativeAI, FunctionDeclaration, SchemaType } from '@google/generative-ai';
+import { initControlTable, getActivePC, setActivePC, watchForActivation } from './db.js';
 
 dotenv.config();
 
@@ -198,42 +199,51 @@ function enforceSingleInstance(): Promise<void> {
   });
 }
 
-// Init V5
+// Init V5 - DB-based PC Control
 initChatSession();
 
-// Token Arbitrage Protocol
-let masterRetryTimer: ReturnType<typeof setTimeout> | null = null;
+async function startMaster() {
+  await initControlTable();
+  const activePC = await getActivePC();
 
-function scheduleMasterRetry(delayMs = 2500) {
-  if (masterRetryTimer) return;
-  masterRetryTimer = setTimeout(async () => {
-    masterRetryTimer = null;
-    try {
-      await bot.stopPolling().catch(() => {});
-      bot.startPolling();
-      console.log(`🏠 [${LOCAL_PC_NAME}] Token recuperado — Maestro activo`);
-      activePCName = LOCAL_PC_NAME;
-      activePCIp = null;
-    } catch (e) {
-      scheduleMasterRetry();
-    }
-  }, delayMs);
+  if (activePC !== LOCAL_PC_NAME) {
+    // Otra PC es la activa — empezar en modo dormido
+    console.log(`💤 [${LOCAL_PC_NAME}] La DB dice que ${activePC} es la activa. Entrando en modo espera...`);
+    startDBWatcher();
+    return;
+  }
+
+  // Esta PC es la activa — arrancar polling
+  enforceSingleInstance().then(() => {
+    bot.startPolling();
+    console.log(`🚀 Antigravity V5 [${LOCAL_PC_NAME}] [ACTIVO] — Controlado por DB`);
+  });
+  startDBWatcher();
 }
 
-bot.on('polling_error', async (error: any) => {
-  const is409 = error?.response?.statusCode === 409 ||
-                error?.message?.includes('409');
-  if (is409) {
-    await bot.stopPolling().catch(() => {});
-    console.log(`💤 [${LOCAL_PC_NAME}] Agente activo. Esperando turno...`);
-    scheduleMasterRetry();
-  }
-});
+function startDBWatcher() {
+  watchForActivation(
+    LOCAL_PC_NAME,
+    3000, // Revisar DB cada 3 segundos
+    async () => {
+      // Esta PC debe activarse
+      console.log(`⚡ [${LOCAL_PC_NAME}] DB: Activando polling...`);
+      activePCName = LOCAL_PC_NAME;
+      activePCIp = null;
+      initChatSession();
+      enforceSingleInstance().then(() => bot.startPolling());
+    },
+    async () => {
+      // Esta PC debe dormirse
+      if (bot.isPolling()) {
+        console.log(`💤 [${LOCAL_PC_NAME}] DB: Deteniendo polling...`);
+        await bot.stopPolling();
+      }
+    }
+  );
+}
 
-enforceSingleInstance().then(() => {
-    bot.startPolling();
-    console.log(`🚀 Antigravity V5 [${LOCAL_PC_NAME}] [MAESTRO] — Token Arbitrage activo`);
-});
+startMaster();
 
 async function sendChunkedMessage(chatId: number, text: string) {
   const MAX_LENGTH = 4000;
@@ -348,33 +358,39 @@ bot.on('callback_query', async (query) => {
     }
   }
 
-  // V5 Switch PC handler
+  // V5 Switch PC handler (DB relay)
   if (query.data && query.data.startsWith('switchpc_')) {
     const parts = query.data.replace('switchpc_', '').split('___');
     const newPCName = parts[0];
     const newPCIp   = parts[1] === 'local' ? null : parts[1];
 
-    // Volver a local (esta misma PC)
+    // Activar esta misma PC
     if (!newPCIp) {
+      await setActivePC(LOCAL_PC_NAME);
       activePCName = LOCAL_PC_NAME;
       activePCIp   = null;
       if (!bot.isPolling()) bot.startPolling();
-      await bot.editMessageText(`✅ *Volviste a ${LOCAL_PC_NAME}*`, {
+      await bot.editMessageText(`✅ *${LOCAL_PC_NAME} activada*`, {
         chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
       });
       await bot.sendMessage(chatId, `💻 *PC Activa: ${LOCAL_PC_NAME}*`, { parse_mode: 'Markdown', ...getMainMenu() });
       return;
     }
 
-    // Switch a otra PC: solo paramos nuestro polling.
-    // El agente tiene su retry loop → toma el token en ~2.5s automaticamente.
+    // Activar otra PC: escribir en DB y parar polling local.
+    // El agente en la otra PC lee la DB cada 3s y arranca automaticamente.
+    await bot.editMessageText(`🔀 Activando *${newPCName}* via DB...`, {
+      chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
+    });
+
+    await setActivePC(newPCName, LOCAL_PC_NAME);
     activePCName = newPCName;
     activePCIp   = newPCIp;
     await bot.stopPolling();
-    console.log(`🔀 [${LOCAL_PC_NAME}] Token cedido. ${newPCName} tomara control pronto.`);
+    console.log(`🔀 DB actualizada: ${newPCName} es ahora la activa.`);
 
     await bot.editMessageText(
-      `🔀 Cediendo control a *${newPCName}*\n\nEl agente respondera en este chat en ~3 segundos.\n_Requiere que \`agent.ts\` este corriendo en esa PC._`,
+      `🔀 *${newPCName}* activada via DB\n\n⏳ Tomara el control en ~3 segundos.\n_Requiere \'agent.ts\' corriendo en esa PC._`,
       { chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown' }
     );
     return;
