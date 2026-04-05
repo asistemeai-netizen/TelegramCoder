@@ -32,27 +32,14 @@ let activeSkills: string[] = [];
 let currentSkillPrompt = '';
 
 // Multi-PC State
-const AGENT_SECRET = process.env.AGENT_SECRET || 'antigravity-secret';
 const LOCAL_PC_NAME = process.env.PC_NAME || os.hostname();
-let activePCName: string = LOCAL_PC_NAME; // Nombre de la PC actualmente activa
-let activePCIp: string | null = null;     // null = local, string = IP del esclavo remoto
+let activePCName: string = LOCAL_PC_NAME;
 
-// Registrar PCs desde .env: PC_LIST="BillyLaptop:192.168.1.10,BillyAgentic:192.168.1.20"
+// Lista de PCs conocidas (se construye dinamicamente desde la DB)
 function getPCList(): { name: string; ip: string | null }[] {
-  const list: { name: string; ip: string | null }[] = [
-    { name: LOCAL_PC_NAME, ip: null } // Siempre incluir la local
-  ];
-  const envList = process.env.PC_LIST || '';
-  if (envList) {
-    envList.split(',').forEach(entry => {
-      const [name, ip] = entry.trim().split(':');
-      if (name && ip && name !== LOCAL_PC_NAME) {
-        list.push({ name: name.trim(), ip: ip.trim() });
-      }
-    });
-  }
-  return list;
+  return [{ name: LOCAL_PC_NAME, ip: null }]; // La lista real viene de la DB
 }
+
 
 // Proxy de comando al agente esclavo remoto
 async function proxyToAgent(ip: string, command: string, cwd: string): Promise<string> {

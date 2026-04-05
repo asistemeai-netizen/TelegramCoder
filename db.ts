@@ -1,4 +1,4 @@
-// db.ts - Control de PC activa via PostgreSQL Cloud
+// db.ts - Control de PC activa via PostgreSQL
 import { Pool } from 'pg';
 import * as dotenv from 'dotenv';
 dotenv.config();
@@ -10,8 +10,9 @@ const pool = new Pool({
   idleTimeoutMillis: 30000,
 });
 
-// ── Inicializar tabla si no existe ──────────────────────────
+// ── Inicializar tablas ──────────────────────────────────────
 export async function initControlTable(): Promise<void> {
+  // Tabla principal de control (qué PC está activa)
   await pool.query(`
     CREATE TABLE IF NOT EXISTS antigravity_control (
       id          INT PRIMARY KEY DEFAULT 1,
@@ -21,14 +22,23 @@ export async function initControlTable(): Promise<void> {
     );
   `);
 
-  // Insertar fila inicial si no existe
+  // Tabla de PCs registradas (auto-registro al arrancar)
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS antigravity_pcs (
+      pc_name     VARCHAR(100) PRIMARY KEY,
+      last_seen   TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
+      is_online   BOOLEAN      NOT NULL DEFAULT true
+    );
+  `);
+
+  // Fila inicial de control si no existe
   await pool.query(`
     INSERT INTO antigravity_control (id, active_pc)
     VALUES (1, $1)
     ON CONFLICT (id) DO NOTHING;
   `, [process.env.PC_NAME || 'BillyAgentic']);
 
-  console.log('✅ [DB] Tabla antigravity_control lista.');
+  console.log('✅ [DB] Tablas antigravity_control y antigravity_pcs listas.');
 }
 
 // ── Leer qué PC está activa ─────────────────────────────────
@@ -85,3 +95,22 @@ export function watchForActivation(
 }
 
 export { pool };
+
+// ── Registrar esta PC en la DB ──────────────────────────────
+export async function registerPC(pcName: string): Promise<void> {
+  await pool.query(`
+    INSERT INTO antigravity_pcs (pc_name, last_seen, is_online)
+    VALUES ($1, NOW(), true)
+    ON CONFLICT (pc_name) DO UPDATE
+      SET last_seen = NOW(), is_online = true;
+  `, [pcName]);
+}
+
+// ── Obtener todas las PCs registradas ───────────────────────
+export async function getRegisteredPCs(): Promise<{ pc_name: string; last_seen: Date; is_online: boolean }[]> {
+  const result = await pool.query(
+    `SELECT pc_name, last_seen, is_online FROM antigravity_pcs ORDER BY last_seen DESC`
+  );
+  return result.rows;
+}
+
