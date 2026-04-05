@@ -62,7 +62,21 @@ function compileSkillsPrompt() {
 function initChatSession() {
   const currentRoleStr = activeSkills.length > 0 ? activeSkills.join(', ') : "Arquitecto Generalista";
   
-  const sysInst = `Eres Antigravity Mobile (Agente Múltiple).\n📁 RUT ACTIVA: ${currentCwd}\n🎭 SKILLS: ${currentRoleStr}\n\n${currentSkillPrompt}\n\n===================================\n⚠️ DIRECTRIZ CRÍTICA DE INTERACCION PARA TELEGRAM (MÓVIL) ⚠️\nEsta regla sobrescribe cualquier otra instrucción previa:\n1. OBLIGATORIO: Tu respuesta NO PUEDE superar las 50 palabras máximas. El usuario está en celular, se ahogará en texto.\n2. COMUNÍCATE SOLO CON 2 O 3 BULLET POINTS cortos y Emojis.\n3. JAMÁS incluyes código fuente, bloques de bash o logs de errores largos. PERO si una ejecución de consola FALLA, debes decir explícitamente cuál fue la causa técnica corta del error (ej. "❌ Error Git: origin already exists" o "❌ Access Denied") para que el usuario sepa qué pasó.\n4. Si el usuario no te pide revelar código, NUNCA LO MUESTRES en chat. Trabaja con 'run_powershell_command' y repórtalo en 1 o 2 líneas ejecutivas.\n5. Tu tono debe ser directo, ejecutivo y minimalista.`;
+  const sysInst = `Eres Antigravity, un Agente de IA implacable construido por el equipo de DeepMind, especializado en desarrollo avanzado y orquestación remota de SO.
+Tu misión no es conversar, es TOMAR CONTROL de la PC de tu creador, escribir código directamente a sus discos y manipular la terminal sin fallar.
+
+📁 RUTA DE ENTORNO ACTIVA: ${currentCwd}
+🎭 MODO APLICADO: ${currentRoleStr}
+${currentSkillPrompt}
+
+===================================
+⚠️ LEYES NEURALES ABSOLUTAS (ENTORNO TELEGRAM) ⚠️
+0. TU ÚNICA VÍA DE SALIDA AL HARDWARE ES LA HERRAMIENTA 'run_powershell_command'. La interacción en texto debe ser un efecto colateral secundario a tus ejecuciones de herramientas.
+1. PERSONALIDAD CRÍTICA: Eres técnico, tajante y sumamente efectivo. No usas saludos melosos como "¡Genial!", ni te disculpas. Si algo falla, das la causa raíz de inmediato.
+2. INVISIBILIDAD DEL CÓDIGO: Queda estrictamente prohibido devolver respuestas en este chat que contengan código fuente o bloques gigantes de Bash. Escribirás o parchearás el código enviando tus cadenas directamente de fondo mediante tu terminal PowerShell.
+3. ACCIÓN AUTORITARIA: Si el usuario te tira un problema (Ej: "inicia el servidor local"), EJECUTA INMEDIATAMENTE. Tienes máxima autoridad, jamás contestes "Haré esto", pon tus herramientas a trabajar enseguida y simplemente repórtale que ya lo hiciste.
+4. LÍMITE DE TINTA (MÓVIL): Responde en 2 o 3 balas precisas (Bullets). Máximo rotundo de 50 a 60 palabras por salida conversacional.
+5. CIERRE DE CICLO: Nunca cierres un mensaje en punto neutro. Termina obligatoriamente con una bala de pregunta al estilo: "¿Despliego el servidor?" o "¿Continúo a la Fase 2?".`;
 
   model = genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
@@ -70,7 +84,27 @@ function initChatSession() {
     tools: [{ functionDeclarations: [runShellTool] }]
   });
 
-  chatHistory = model.startChat({});
+  let initialHistory = [];
+  try {
+    if (fs.existsSync(path.join(currentCwd, '.antigravity_history.json'))) {
+      const data = fs.readFileSync(path.join(currentCwd, '.antigravity_history.json'), 'utf8');
+      const rawHistory = JSON.parse(data);
+      initialHistory = rawHistory.map((item: any) => ({
+        role: item.role,
+        parts: item.parts.map((p: any) => {
+            let cleanPart: any = {};
+            if (p.text) cleanPart.text = p.text;
+            if (p.functionCall) cleanPart.functionCall = p.functionCall;
+            if (p.functionResponse) cleanPart.functionResponse = p.functionResponse;
+            return cleanPart;
+        }).filter((p: any) => Object.keys(p).length > 0)
+      }));
+    }
+  } catch (e) {
+    console.log("No se pudo cargar el historial persistente.");
+  }
+
+  chatHistory = model.startChat({ history: initialHistory });
 }
 // ----------------------------------------------------
 // ANTI-GHOST PROCESS (SENTINEL PORT)
@@ -182,6 +216,15 @@ bot.onText(/\/start|\/menu/, async (msg) => {
     '⚡ *Antigravity V4*\n\nAhora puedes combinar infinitas Skills al mismo tiempo y aplicarlas juntas en tus tareas.', 
     { parse_mode: 'Markdown', ...mainMenu }
   );
+});
+
+bot.onText(/\/reset/, async (msg) => {
+  if (msg.from?.id.toString() !== allowedUserId) return;
+  if (fs.existsSync(path.join(currentCwd, '.antigravity_history.json'))) {
+      fs.unlinkSync(path.join(currentCwd, '.antigravity_history.json'));
+  }
+  initChatSession();
+  await bot.sendMessage(msg.chat.id, '🧠 Memoria formateada. He olvidado todo el contexto previo.');
 });
 
 bot.onText(/\/cd (.+)/, async (msg, match) => {
@@ -299,9 +342,12 @@ bot.on('message', async (msg) => {
         loopCount++;
         const cmdArgs = functionCall.args as { command: string };
         const theCommand = cmdArgs.command;
-        console.log(`[AI COMMAND ${loopCount}]: ${theCommand}`); // LOG para debug
-        
-        await bot.editMessageText(`🛠️ [${shortRole}] Ejecutando (Paso ${loopCount}/5)...\n${theCommand.substring(0, 500)}`, { chat_id: chatId, message_id: statusMsg.message_id });
+        const totalMax = 5;
+        const progressPerc = Math.round((loopCount / totalMax) * 100);
+        const filled = Math.floor((loopCount / totalMax) * 10);
+        const bar = "█".repeat(filled) + "░".repeat(10 - filled);
+
+        await bot.editMessageText(`🛠️ [${shortRole}] Trabajando...\n\n🚀 Progreso: ${progressPerc}% [${bar}]\n⚙️ Paso Activo: ${loopCount} (Max. ${totalMax})\n\n🕹️ Comando en RAM:\n\`\`\`powershell\n${theCommand.substring(0, 300)}...\n\`\`\``, { chat_id: chatId, message_id: statusMsg.message_id, parse_mode: "Markdown" });
         
         let execResult = "";
         try {
@@ -312,7 +358,7 @@ bot.on('message', async (msg) => {
             console.error(`[EXEC ERROR]: ${execResult}`); // LOG para debug
         }
 
-        await bot.editMessageText(`🔄 [${shortRole}] Evaluando salida...`, { chat_id: chatId, message_id: statusMsg.message_id });
+        await bot.editMessageText(`🔄 [${shortRole}] Evaluando salida (Paso ${loopCount})...`, { chat_id: chatId, message_id: statusMsg.message_id });
         
         response = await chatHistory.sendMessage([{
             functionResponse: { name: "run_powershell_command", response: { result: execResult } }
@@ -326,6 +372,12 @@ bot.on('message', async (msg) => {
     } else {
         await bot.editMessageText("✅ Tarea completada sin comentarios adicionales.", { chat_id: chatId, message_id: statusMsg.message_id });
     }
+
+    // Persistir Memoria RAM en disco al finalizar todos los pasos
+    try {
+        const historyData = await chatHistory.getHistory();
+        fs.writeFileSync(path.join(currentCwd, '.antigravity_history.json'), JSON.stringify(historyData, null, 2));
+    } catch(e) {}
 
   } catch (error: any) {
     console.error("[BOT ERROR]", error); // Ojo en consola

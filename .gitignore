@@ -1,1 +1,5 @@
-'.agent/'  
+node_modules/
+.env
+.antigravity_history.json
+.agent/
+__pycache__/
