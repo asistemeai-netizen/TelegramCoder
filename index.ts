@@ -198,12 +198,30 @@ function enforceSingleInstance(): Promise<void> {
   });
 }
 
-// Init V4
+// Init V5
 initChatSession();
 
 enforceSingleInstance().then(() => {
     bot.startPolling();
-    console.log('🚀 Servicio Antigravity V4 Iniciado [INSTANCIA ÚNICA PROTEGIDA]');
+    console.log(`🚀 Antigravity V5 Iniciado [${LOCAL_PC_NAME}] [MAESTRO]`);
+});
+
+// Endpoint /resume: el agente esclavo nos devuelve el control
+const resumeServer = http.createServer((req, res) => {
+  if (req.method === 'POST' && req.url === '/resume') {
+    const secret = req.headers['x-agent-secret'];
+    if (secret !== AGENT_SECRET) { res.writeHead(401); res.end(); return; }
+    res.writeHead(200); res.end(JSON.stringify({ ok: true }));
+    console.log('🔄 Control devuelto al Maestro. Reanudando polling...');
+    activePCName = LOCAL_PC_NAME;
+    activePCIp   = null;
+    bot.startPolling();
+  } else {
+    res.writeHead(404); res.end();
+  }
+});
+resumeServer.listen(4911, '0.0.0.0', () => {
+  console.log('📡 Endpoint /resume activo en puerto 4911');
 });
 
 async function sendChunkedMessage(chatId: number, text: string) {
@@ -323,39 +341,70 @@ bot.on('callback_query', async (query) => {
   if (query.data && query.data.startsWith('switchpc_')) {
     const parts = query.data.replace('switchpc_', '').split('___');
     const newPCName = parts[0];
-    const newPCIp = parts[1] === 'local' ? null : parts[1];
+    const newPCIp   = parts[1] === 'local' ? null : parts[1];
 
-    // Verificar que el agente remoto esté online (si es remoto)
-    let statusText = '';
-    if (newPCIp) {
-      try {
-        const pingResult = await new Promise<string>((resolve) => {
-          const req = http.get(`http://${newPCIp}:${process.env.AGENT_PORT || '4910'}/ping`, (res) => {
-            let data = '';
-            res.on('data', c => data += c);
-            res.on('end', () => resolve(data));
-          });
-          req.on('error', () => resolve('offline'));
-          req.setTimeout(3000, () => { req.destroy(); resolve('timeout'); });
-        });
-        const parsed = JSON.parse(pingResult);
-        statusText = `✅ Agente online en *${parsed.pc}*`;
-      } catch {
-        statusText = `⚠️ No se pudo verificar el agente en ${newPCIp}. Igual se activó.`;
-      }
-    } else {
-      statusText = `🏠 Modo local activado`;
+    // Volver a local (esta misma PC)
+    if (!newPCIp) {
+      activePCName = LOCAL_PC_NAME;
+      activePCIp   = null;
+      if (!bot.isPolling()) bot.startPolling();
+      await bot.editMessageText(`✅ *Volviste a ${LOCAL_PC_NAME}* (local)`, {
+        chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
+      });
+      await bot.sendMessage(chatId, `💻 *PC Activa: ${LOCAL_PC_NAME}*`, { parse_mode: 'Markdown', ...getMainMenu() });
+      return;
     }
 
+    // Hacer handoff a PC esclava
+    await bot.editMessageText(`🔄 Conectando con *${newPCName}* (${newPCIp})...`, {
+      chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
+    });
+
+    // 1. Llamar /takeover en el agente remoto
+    const agentPort = parseInt(process.env.AGENT_PORT || '4910');
+    const masterLocalIp = getLocalIP();
+    const handoffBody = JSON.stringify({ masterIp: masterLocalIp, masterPort: 4911 });
+
+    const handoffResult = await new Promise<boolean>((resolve) => {
+      const req = http.request({
+        hostname: newPCIp,
+        port: agentPort,
+        path: '/takeover',
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(handoffBody),
+          'x-agent-secret': AGENT_SECRET
+        },
+        timeout: 5000
+      }, (res) => {
+        let data = '';
+        res.on('data', c => data += c);
+        res.on('end', () => resolve(res.statusCode === 200));
+      });
+      req.on('error', () => resolve(false));
+      req.on('timeout', () => { req.destroy(); resolve(false); });
+      req.write(handoffBody);
+      req.end();
+    });
+
+    if (!handoffResult) {
+      await bot.editMessageText(`❌ No se pudo conectar con *${newPCName}* en ${newPCIp}:${agentPort}\n\n_¿Está corriendo agent.ts en esa PC?_`, {
+        chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
+      });
+      return;
+    }
+
+    // 2. Detener el polling del maestro
     activePCName = newPCName;
-    activePCIp = newPCIp;
-    initChatSession(); // Reset contexto al cambiar de PC
+    activePCIp   = newPCIp;
+    await bot.stopPolling();
 
     await bot.editMessageText(
-      `🔀 *Cambiado a: ${activePCName}*\n${statusText}\n\n_Contexto limpiado. Listo para operar._`,
+      `🔀 *Control transferido a ${newPCName}*\n\n✅ Esa PC ahora responde en este chat.\nToca 🔀 Switch PC en esa sesión para volver.`,
       { chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown' }
     );
-    await bot.sendMessage(chatId, `💻 *PC Activa: ${activePCName}*`, { parse_mode: 'Markdown', ...getMainMenu() });
+    return;
   }
 
 
@@ -515,3 +564,16 @@ bot.onText(/🛑 Apagar Bot/, async (msg) => {
   await bot.sendMessage(msg.chat.id, '💤 Botón de apagado presionado (ignorado temporal).', {reply_markup: {remove_keyboard: true}});
   // process.exit(0);
 });
+
+function getLocalIP(): string {
+  const interfaces = os.networkInterfaces();
+  for (const iface of Object.values(interfaces)) {
+    if (!iface) continue;
+    for (const config of iface) {
+      if (config.family === 'IPv4' && !config.internal) {
+        return config.address;
+      }
+    }
+  }
+  return '127.0.0.1';
+}

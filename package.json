@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:telegram": "tsx index.ts",
+    "dev:agent": "tsx agent.ts",
     "start": "tsx index.ts"
   },
   "keywords": [],
