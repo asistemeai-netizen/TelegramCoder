@@ -1,43 +1,45 @@
-// agent.ts - Antigravity Slave/Takeover Agent V5
-// Modos: SLAVE (HTTP server, espera takeover) ↔ MASTER (toma el token de Telegram)
+// agent.ts - Antigravity Agent V5 (Token Arbitrage Protocol)
+// Ambas PCs compiten por el token. Solo una responde a la vez.
+// 100% Telegram/Internet nativo. Sin IPs, sin puertos, sin servicios externos.
 import TelegramBot from 'node-telegram-bot-api';
 import * as dotenv from 'dotenv';
 import { exec } from 'child_process';
 import { promisify } from 'util';
 import * as os from 'os';
-import * as fs from 'fs';
-import * as path from 'path';
 import * as http from 'http';
 import { GoogleGenerativeAI, FunctionDeclaration, SchemaType } from '@google/generative-ai';
 
 dotenv.config();
 
-const execAsync = promisify(exec);
-const AGENT_PORT  = parseInt(process.env.AGENT_PORT  || '4910');
+const execAsync    = promisify(exec);
+const AGENT_PORT   = parseInt(process.env.AGENT_PORT || '4910');
 const AGENT_SECRET = process.env.AGENT_SECRET || 'antigravity-secret';
-const PC_NAME     = process.env.PC_NAME || os.hostname();
+const PC_NAME      = process.env.PC_NAME || os.hostname();
 
-// ---- Telegram + Gemini (mismo token que maestro) ----
-const token      = process.env.TELEGRAM_BOT_TOKEN!;
-const allowedId  = process.env.TELEGRAM_USER_ID!;
-const geminiKey  = process.env.GEMINI_API_KEY!;
+const token     = process.env.TELEGRAM_BOT_TOKEN!;
+const allowedId = process.env.TELEGRAM_USER_ID!;
+const geminiKey = process.env.GEMINI_API_KEY!;
 
 if (!token || !allowedId || !geminiKey) {
   console.error('❌ Faltan variables en .env'); process.exit(1);
 }
 
-const bot    = new TelegramBot(token, { polling: false }); // Arranca dormido
-const genAI  = new GoogleGenerativeAI(geminiKey);
+const bot   = new TelegramBot(token, { polling: false });
+const genAI = new GoogleGenerativeAI(geminiKey);
 const execAsyncShell = promisify(exec);
 
-let isMaster = false;
+let isActive   = false; // ¿Esta PC está respondiendo en Telegram ahora mismo?
 let currentCwd = process.cwd();
 let chatHistory: any;
 let model: any;
+let retryTimer: ReturnType<typeof setTimeout> | null = null;
 
+// ============================================================
+// GEMINI SESSION
+// ============================================================
 const runShellTool: FunctionDeclaration = {
   name: "run_powershell_command",
-  description: "Ejecuta comandos de PowerShell en esta PC esclava.",
+  description: "Ejecuta comandos de PowerShell en esta PC.",
   parameters: {
     type: SchemaType.OBJECT,
     properties: { command: { type: SchemaType.STRING } },
@@ -46,39 +48,170 @@ const runShellTool: FunctionDeclaration = {
 };
 
 function initSession() {
-  const sysInst = `Eres Antigravity, agente AI implacable de DeepMind en PC "${PC_NAME}".
-📁 RUTA ACTIVA: ${currentCwd}
-
-⚠️ LEYES NEURALES:
-0. USA SIEMPRE la herramienta run_powershell_command para ejecutar en hardware.
-1. Respuestas en máximo 3 bullets. Máx 60 palabras.
-2. NUNCA des bloques de código en el chat: ejecuta directamente.
-3. ACCIÓN INMEDIATA: Ejecuta sin preguntar permiso.
-4. Cierra siempre con una pregunta de siguiente paso.`;
-
   model = genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
-    systemInstruction: sysInst,
+    systemInstruction: `Eres Antigravity, agente AI en PC "${PC_NAME}".
+📁 RUTA: ${currentCwd}
+⚠️ LEYES NEURALES:
+0. USA run_powershell_command para todo lo que toque hardware.
+1. Máximo 3 bullets. Máx 60 palabras por respuesta.
+2. NUNCA bloque de código en chat: ejecuta directo.
+3. ACCIÓN INMEDIATA sin pedir permiso.
+4. Cierra siempre con pregunta de siguiente paso.`,
     tools: [{ functionDeclarations: [runShellTool] }]
   });
   chatHistory = model.startChat({ history: [] });
 }
 
-// ---- Lógica de respuesta IA (igual que index.ts) ----
-async function handleMessage(chatId: number, text: string) {
+// ============================================================
+// TOKEN ARBITRAGE PROTOCOL
+// ============================================================
+async function tryClaimToken() {
+  if (isActive) return;
+  if (retryTimer) { clearTimeout(retryTimer); retryTimer = null; }
+
+  try {
+    await bot.stopPolling().catch(() => {}); // Limpiar estado anterior
+    bot.startPolling({ interval: 300, params: { timeout: 10 } });
+    console.log(`🎯 [${PC_NAME}] Intentando tomar el token...`);
+  } catch (e) {
+    scheduleRetry();
+  }
+}
+
+function scheduleRetry(delayMs = 2500) {
+  if (isActive || retryTimer) return;
+  retryTimer = setTimeout(() => {
+    retryTimer = null;
+    tryClaimToken();
+  }, delayMs);
+}
+
+// Perdimos el token (otro bot lo tiene) → esperar y reintentar
+bot.on('polling_error', async (error: any) => {
+  const is409 = error?.response?.statusCode === 409 ||
+                error?.message?.includes('409') ||
+                error?.code === 'CONFLICT';
+
+  if (is409 && !isActive) {
+    await bot.stopPolling().catch(() => {});
+    console.log(`💤 [${PC_NAME}] Maestro activo. Esperando turno...`);
+    scheduleRetry();
+    return;
+  }
+
+  // Otro tipo de error (red, API, etc.) → también reintentar
+  if (!isActive) {
+    console.error(`⚠️  [${PC_NAME}] Error de polling: ${error?.message}`);
+    scheduleRetry(5000);
+  }
+});
+
+// ============================================================
+// HANDLERS: cuando esta PC es la activa
+// ============================================================
+bot.on('message', async (msg) => {
+  if (msg.from?.id.toString() !== allowedId) return;
+  const text = msg.text;
+  if (!text) return;
+
+  // Primera vez que recibimos un mensaje = confirmamos que somos el maestro activo
+  if (!isActive) {
+    isActive = true;
+    console.log(`\n✅ [${PC_NAME}] TOKEN TOMADO — Ahora soy el MAESTRO activo\n`);
+    // Anunciar al usuario que esta PC tomó el control
+    await bot.sendMessage(msg.chat.id,
+      `🔀 *${PC_NAME}* tomó el control\n💻 Envía comandos directamente o toca el botón para volver.`,
+      { parse_mode: 'Markdown', reply_markup: {
+          keyboard: [
+            [{ text: '📂 Archivos' }, { text: '📍 Contexto' }],
+            [{ text: `🔙 Volver al Maestro` }]
+          ],
+          resize_keyboard: true, persistent: true
+      }}
+    );
+    initSession();
+    return; // El mensaje que nos "despertó" era el switch, no procesarlo como IA
+  }
+
+  if (text.startsWith('/')) return;
+
+  // Comando para devolver el control
+  if (text === '🔙 Volver al Maestro') {
+    await releaseToken(msg.chat.id);
+    return;
+  }
+
+  // Comando de contexto
+  if (text === '📍 Contexto') {
+    await bot.sendMessage(msg.chat.id, `📍 *${PC_NAME}*\n📁 \`${currentCwd}\``, { parse_mode: 'Markdown' });
+    return;
+  }
+
+  // IA procesa el resto
+  await handleAIMessage(msg.chat.id, text);
+});
+
+bot.onText(/\/start|\/menu/, async (msg) => {
+  if (msg.from?.id.toString() !== allowedId) return;
+  if (!isActive) return; // Si no somos maestro, ignorar
+  await bot.sendMessage(msg.chat.id,
+    `⚡ *Antigravity — ${PC_NAME}*\nControlando esta PC directamente.\n\n Envía comandos o vuelve al Maestro.`,
+    { parse_mode: 'Markdown', reply_markup: {
+        keyboard: [
+          [{ text: '📂 Archivos' }, { text: '📍 Contexto' }],
+          [{ text: '🔙 Volver al Maestro' }]
+        ],
+        resize_keyboard: true, persistent: true
+    }}
+  );
+});
+
+// ============================================================
+// LIBERAR TOKEN (devolver al maestro)
+// ============================================================
+async function releaseToken(chatId?: number) {
+  console.log(`\n🔙 [${PC_NAME}] Liberando token → Maestro tomará control en ~3s`);
+  isActive = false;
+  bot.removeAllListeners();
+
+  if (chatId) {
+    await bot.sendMessage(chatId, `🔙 Devolviendo control... El Maestro responderá en ~3 segundos.`);
+  }
+
+  await bot.stopPolling().catch(() => {});
+
+  // Re-registrar solo el handler de polling_error para el modo idle
+  bot.on('polling_error', async (error: any) => {
+    const is409 = error?.response?.statusCode === 409 ||
+                  error?.message?.includes('409');
+    if (is409 && !isActive) {
+      await bot.stopPolling().catch(() => {});
+      scheduleRetry();
+    }
+  });
+
+  // Volvemos al modo de competencia pasiva (retry loop)
+  scheduleRetry(1000);
+}
+
+// ============================================================
+// LÓGICA DE IA
+// ============================================================
+async function handleAIMessage(chatId: number, text: string) {
   const statusMsg = await bot.sendMessage(chatId, `💭 _[${PC_NAME}] Pensando..._`, { parse_mode: 'Markdown' });
   try {
-    let response = await chatHistory.sendMessage(text);
+    let response     = await chatHistory.sendMessage(text);
     let functionCall = response.response.functionCalls()?.[0];
-    let loopCount = 0;
+    let loopCount    = 0;
 
     while (functionCall?.name === "run_powershell_command" && loopCount < 5) {
       loopCount++;
-      const cmd = (functionCall.args as any).command;
+      const cmd    = (functionCall.args as any).command;
       const filled = Math.floor((loopCount / 5) * 10);
-      const bar = "█".repeat(filled) + "░".repeat(10 - filled);
+      const bar    = "█".repeat(filled) + "░".repeat(10 - filled);
       await bot.editMessageText(
-        `🛠️ [${PC_NAME}] ${loopCount}/5\n\`${bar}\`\n⚙️ \`${cmd.substring(0, 200)}\``,
+        `🛠️ [${PC_NAME}] ${loopCount}/5 [${bar}]\n⚙️ \`${cmd.substring(0, 250)}\``,
         { chat_id: chatId, message_id: statusMsg.message_id, parse_mode: 'Markdown' }
       );
 
@@ -88,7 +221,7 @@ async function handleMessage(chatId: number, text: string) {
         execResult = stdout || stderr || 'OK';
       } catch (e: any) { execResult = 'Error: ' + e.message; }
 
-      response = await chatHistory.sendMessage([{
+      response     = await chatHistory.sendMessage([{
         functionResponse: { name: "run_powershell_command", response: { result: execResult } }
       }]);
       functionCall = response.response.functionCalls()?.[0];
@@ -101,102 +234,29 @@ async function handleMessage(chatId: number, text: string) {
   }
 }
 
-// ---- Activar modo MASTER (tomar el token de Telegram) ----
-async function takeover(masterIp: string, masterPort: number) {
-  console.log(`🔀 TAKEOVER: ${PC_NAME} tomando control de Telegram...`);
-  initSession();
-  isMaster = true;
-
-  bot.startPolling();
-
-  bot.on('message', async (msg) => {
-    if (msg.from?.id.toString() !== allowedId) return;
-    const text = msg.text;
-    if (!text || text.startsWith('/')) return;
-
-    if (text === '🔀 Switch PC') {
-      // Devolver control al maestro original
-      await bot.sendMessage(msg.chat.id, `🔄 Devolviendo control a PC Maestro...`);
-      await releaseControl(masterIp, masterPort, msg.chat.id);
-      return;
-    }
-    await handleMessage(msg.chat.id, text);
-  });
-
-  bot.onText(/\/start|\/menu/, async (msg) => {
-    if (msg.from?.id.toString() !== allowedId) return;
-    await bot.sendMessage(msg.chat.id,
-      `⚡ *Antigravity — ${PC_NAME}*\n🖥️ Controlando esta PC remotamente.\n\nEnvía comandos o toca 🔀 Switch PC para volver.`,
-      { parse_mode: 'Markdown', reply_markup: {
-        keyboard: [[{ text: '📍 Contexto' }, { text: '📂 Archivos' }], [{ text: '🔀 Switch PC' }]],
-        resize_keyboard: true, persistent: true
-      }}
-    );
-  });
-
-  bot.onText(/\/reset/, async (msg) => {
-    if (msg.from?.id.toString() !== allowedId) return;
-    initSession();
-    await bot.sendMessage(msg.chat.id, '🧠 Memoria de ${PC_NAME} limpiada.');
-  });
-}
-
-// ---- Devolver control al maestro ----
-async function releaseControl(masterIp: string, masterPort: number, chatId?: number) {
-  console.log(`💤 ${PC_NAME} liberando Telegram, devolviendo a maestro...`);
-  bot.removeAllListeners();
-  await bot.stopPolling();
-  isMaster = false;
-
-  // Avisar al maestro que retome el polling
-  const wakeOptions = {
-    hostname: masterIp,
-    port: masterPort,
-    path: '/resume',
-    method: 'POST',
-    headers: { 'x-agent-secret': AGENT_SECRET }
-  };
-  http.request(wakeOptions, () => {}).on('error', () => {}).end();
-}
-
-// ---- HTTP Server (siempre activo) ----
+// ============================================================
+// HTTP SERVER (local fallback para comandos directos)
+// ============================================================
 const server = http.createServer(async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
 
-  // Health check
   if (req.method === 'GET' && req.url === '/ping') {
     res.writeHead(200);
-    res.end(JSON.stringify({ status: isMaster ? 'master' : 'slave', pc: PC_NAME }));
+    res.end(JSON.stringify({ status: isActive ? 'master' : 'slave', pc: PC_NAME }));
     return;
   }
 
-  // Auth check
   if (req.headers['x-agent-secret'] !== AGENT_SECRET) {
     res.writeHead(401); res.end(JSON.stringify({ error: 'Unauthorized' })); return;
   }
 
-  // Takeover: tomar control de Telegram
-  if (req.method === 'POST' && req.url === '/takeover') {
-    let body = '';
-    req.on('data', c => body += c);
-    req.on('end', async () => {
-      const { masterIp, masterPort } = JSON.parse(body || '{}');
-      res.writeHead(200);
-      res.end(JSON.stringify({ ok: true, message: `${PC_NAME} tomando control` }));
-      await takeover(masterIp || '127.0.0.1', masterPort || 4909);
-    });
-    return;
-  }
-
-  // Run: ejecutar comando directo (modo proxy del maestro)
   if (req.method === 'POST' && req.url === '/run') {
     let body = '';
     req.on('data', c => body += c);
     req.on('end', async () => {
       try {
         const { command, cwd } = JSON.parse(body);
-        const workDir = cwd || currentCwd;
-        const { stdout, stderr } = await execAsync(command, { cwd: workDir, shell: 'powershell.exe', timeout: 60000 });
+        const { stdout, stderr } = await execAsync(command, { cwd: cwd || currentCwd, shell: 'powershell.exe', timeout: 60000 });
         res.writeHead(200);
         res.end(JSON.stringify({ success: true, output: stdout || stderr || 'OK', pc: PC_NAME }));
       } catch (e: any) {
@@ -210,21 +270,14 @@ const server = http.createServer(async (req, res) => {
   res.writeHead(404); res.end(JSON.stringify({ error: 'Not found' }));
 });
 
+// ============================================================
+// ARRANQUE
+// ============================================================
 server.listen(AGENT_PORT, '0.0.0.0', () => {
-  const ip = getLocalIP();
   console.log(`\n🤖 ANTIGRAVITY AGENT — ${PC_NAME}`);
-  console.log(`💤 Modo: ESCLAVO (esperando takeover)`);
-  console.log(`🌐 IP Local: ${ip}:${AGENT_PORT}`);
-  console.log(`\n  En el .env del Maestro agrega:`);
-  console.log(`  PC_LIST=${PC_NAME}:${ip}\n`);
+  console.log(`📡 HTTP server activo en puerto ${AGENT_PORT}`);
+  console.log(`🏆 Iniciando Token Arbitrage Protocol...`);
+  console.log(`   (Competiendo por el token de Telegram. Si hay otro bot activo,`);
+  console.log(`    este esperará automáticamente hasta que sea su turno.)\n`);
+  tryClaimToken();
 });
-
-function getLocalIP(): string {
-  for (const iface of Object.values(os.networkInterfaces())) {
-    if (!iface) continue;
-    for (const cfg of iface) {
-      if (cfg.family === 'IPv4' && !cfg.internal) return cfg.address;
-    }
-  }
-  return '127.0.0.1';
-}

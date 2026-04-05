@@ -201,27 +201,38 @@ function enforceSingleInstance(): Promise<void> {
 // Init V5
 initChatSession();
 
-enforceSingleInstance().then(() => {
-    bot.startPolling();
-    console.log(`🚀 Antigravity V5 Iniciado [${LOCAL_PC_NAME}] [MAESTRO]`);
-});
+// Token Arbitrage Protocol
+let masterRetryTimer: ReturnType<typeof setTimeout> | null = null;
 
-// Endpoint /resume: el agente esclavo nos devuelve el control
-const resumeServer = http.createServer((req, res) => {
-  if (req.method === 'POST' && req.url === '/resume') {
-    const secret = req.headers['x-agent-secret'];
-    if (secret !== AGENT_SECRET) { res.writeHead(401); res.end(); return; }
-    res.writeHead(200); res.end(JSON.stringify({ ok: true }));
-    console.log('🔄 Control devuelto al Maestro. Reanudando polling...');
-    activePCName = LOCAL_PC_NAME;
-    activePCIp   = null;
-    bot.startPolling();
-  } else {
-    res.writeHead(404); res.end();
+function scheduleMasterRetry(delayMs = 2500) {
+  if (masterRetryTimer) return;
+  masterRetryTimer = setTimeout(async () => {
+    masterRetryTimer = null;
+    try {
+      await bot.stopPolling().catch(() => {});
+      bot.startPolling();
+      console.log(`🏠 [${LOCAL_PC_NAME}] Token recuperado — Maestro activo`);
+      activePCName = LOCAL_PC_NAME;
+      activePCIp = null;
+    } catch (e) {
+      scheduleMasterRetry();
+    }
+  }, delayMs);
+}
+
+bot.on('polling_error', async (error: any) => {
+  const is409 = error?.response?.statusCode === 409 ||
+                error?.message?.includes('409');
+  if (is409) {
+    await bot.stopPolling().catch(() => {});
+    console.log(`💤 [${LOCAL_PC_NAME}] Agente activo. Esperando turno...`);
+    scheduleMasterRetry();
   }
 });
-resumeServer.listen(4911, '0.0.0.0', () => {
-  console.log('📡 Endpoint /resume activo en puerto 4911');
+
+enforceSingleInstance().then(() => {
+    bot.startPolling();
+    console.log(`🚀 Antigravity V5 [${LOCAL_PC_NAME}] [MAESTRO] — Token Arbitrage activo`);
 });
 
 async function sendChunkedMessage(chatId: number, text: string) {
@@ -348,60 +359,22 @@ bot.on('callback_query', async (query) => {
       activePCName = LOCAL_PC_NAME;
       activePCIp   = null;
       if (!bot.isPolling()) bot.startPolling();
-      await bot.editMessageText(`✅ *Volviste a ${LOCAL_PC_NAME}* (local)`, {
+      await bot.editMessageText(`✅ *Volviste a ${LOCAL_PC_NAME}*`, {
         chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
       });
       await bot.sendMessage(chatId, `💻 *PC Activa: ${LOCAL_PC_NAME}*`, { parse_mode: 'Markdown', ...getMainMenu() });
       return;
     }
 
-    // Hacer handoff a PC esclava
-    await bot.editMessageText(`🔄 Conectando con *${newPCName}* (${newPCIp})...`, {
-      chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
-    });
-
-    // 1. Llamar /takeover en el agente remoto
-    const agentPort = parseInt(process.env.AGENT_PORT || '4910');
-    const masterLocalIp = getLocalIP();
-    const handoffBody = JSON.stringify({ masterIp: masterLocalIp, masterPort: 4911 });
-
-    const handoffResult = await new Promise<boolean>((resolve) => {
-      const req = http.request({
-        hostname: newPCIp,
-        port: agentPort,
-        path: '/takeover',
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Content-Length': Buffer.byteLength(handoffBody),
-          'x-agent-secret': AGENT_SECRET
-        },
-        timeout: 5000
-      }, (res) => {
-        let data = '';
-        res.on('data', c => data += c);
-        res.on('end', () => resolve(res.statusCode === 200));
-      });
-      req.on('error', () => resolve(false));
-      req.on('timeout', () => { req.destroy(); resolve(false); });
-      req.write(handoffBody);
-      req.end();
-    });
-
-    if (!handoffResult) {
-      await bot.editMessageText(`❌ No se pudo conectar con *${newPCName}* en ${newPCIp}:${agentPort}\n\n_¿Está corriendo agent.ts en esa PC?_`, {
-        chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown'
-      });
-      return;
-    }
-
-    // 2. Detener el polling del maestro
+    // Switch a otra PC: solo paramos nuestro polling.
+    // El agente tiene su retry loop → toma el token en ~2.5s automaticamente.
     activePCName = newPCName;
     activePCIp   = newPCIp;
     await bot.stopPolling();
+    console.log(`🔀 [${LOCAL_PC_NAME}] Token cedido. ${newPCName} tomara control pronto.`);
 
     await bot.editMessageText(
-      `🔀 *Control transferido a ${newPCName}*\n\n✅ Esa PC ahora responde en este chat.\nToca 🔀 Switch PC en esa sesión para volver.`,
+      `🔀 Cediendo control a *${newPCName}*\n\nEl agente respondera en este chat en ~3 segundos.\n_Requiere que \`agent.ts\` este corriendo en esa PC._`,
       { chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown' }
     );
     return;
