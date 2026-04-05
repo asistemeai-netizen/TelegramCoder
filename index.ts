@@ -24,11 +24,68 @@ const execAsync = promisify(exec);
 const genAI = new GoogleGenerativeAI(geminiKey);
 
 // ----------------------------------------------------
-// STATE MANAGEMENT (V4)
+// STATE MANAGEMENT (V5 - Multi-PC)
 // ----------------------------------------------------
 let currentCwd = process.cwd();
-let activeSkills: string[] = []; // Multiple skills
+let activeSkills: string[] = [];
 let currentSkillPrompt = '';
+
+// Multi-PC State
+const AGENT_SECRET = process.env.AGENT_SECRET || 'antigravity-secret';
+const LOCAL_PC_NAME = process.env.PC_NAME || os.hostname();
+let activePCName: string = LOCAL_PC_NAME; // Nombre de la PC actualmente activa
+let activePCIp: string | null = null;     // null = local, string = IP del esclavo remoto
+
+// Registrar PCs desde .env: PC_LIST="BillyLaptop:192.168.1.10,BillyAgentic:192.168.1.20"
+function getPCList(): { name: string; ip: string | null }[] {
+  const list: { name: string; ip: string | null }[] = [
+    { name: LOCAL_PC_NAME, ip: null } // Siempre incluir la local
+  ];
+  const envList = process.env.PC_LIST || '';
+  if (envList) {
+    envList.split(',').forEach(entry => {
+      const [name, ip] = entry.trim().split(':');
+      if (name && ip && name !== LOCAL_PC_NAME) {
+        list.push({ name: name.trim(), ip: ip.trim() });
+      }
+    });
+  }
+  return list;
+}
+
+// Proxy de comando al agente esclavo remoto
+async function proxyToAgent(ip: string, command: string, cwd: string): Promise<string> {
+  return new Promise((resolve) => {
+    const agentPort = process.env.AGENT_PORT || '4910';
+    const body = JSON.stringify({ command, cwd });
+    const options = {
+      hostname: ip,
+      port: parseInt(agentPort),
+      path: '/run',
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(body),
+        'x-agent-secret': AGENT_SECRET
+      },
+      timeout: 65000
+    };
+    const req = http.request(options, (res) => {
+      let data = '';
+      res.on('data', chunk => { data += chunk; });
+      res.on('end', () => {
+        try {
+          const parsed = JSON.parse(data);
+          resolve(parsed.output || 'Sin salida del agente.');
+        } catch { resolve(data || 'Respuesta inválida del agente.'); }
+      });
+    });
+    req.on('error', (e) => resolve(`❌ Error conectando al agente en ${ip}: ${e.message}`));
+    req.on('timeout', () => { req.destroy(); resolve(`❌ Timeout: El agente en ${ip} no respondió.`); });
+    req.write(body);
+    req.end();
+  });
+}
 
 const runShellTool: FunctionDeclaration = {
   name: "run_powershell_command",
@@ -198,23 +255,27 @@ function getSkillsKeyboard() {
   return { inline_keyboard: inlineKeyboard };
 }
 
-const mainMenu = {
-  reply_markup: {
-    keyboard: [
-      [{ text: '📍 Ver Contexto Actual' }, { text: '📂 Archivos del Proyecto' }],
-      [{ text: '🎭 Gestionar Skills (Múltiples)' }, { text: '🛑 Apagar Bot' }]
-    ],
-    resize_keyboard: true,
-    persistent: true
-  }
-};
+function getMainMenu() {
+  const pcLabel = activePCIp ? `🖥 PC: ${activePCName} (remoto)` : `💻 PC: ${activePCName} (local)`;
+  return {
+    reply_markup: {
+      keyboard: [
+        [{ text: '📍 Ver Contexto Actual' }, { text: '📂 Archivos del Proyecto' }],
+        [{ text: '🎭 Gestionar Skills (Múltiples)' }, { text: '🔀 Switch PC' }],
+        [{ text: pcLabel }]
+      ],
+      resize_keyboard: true,
+      persistent: true
+    }
+  };
+}
 
 bot.onText(/\/start|\/menu/, async (msg) => {
   if (msg.from?.id.toString() !== allowedUserId) return;
   await bot.sendMessage(
     msg.chat.id, 
-    '⚡ *Antigravity V4*\n\nAhora puedes combinar infinitas Skills al mismo tiempo y aplicarlas juntas en tus tareas.', 
-    { parse_mode: 'Markdown', ...mainMenu }
+    `⚡ *Antigravity V5 — Multi-PC*\n\n💻 Controlando: *${activePCName}*\nEstado: ${activePCIp ? '🌐 Remoto' : '🏠 Local'}`, 
+    { parse_mode: 'Markdown', ...getMainMenu() }
   );
 });
 
@@ -257,6 +318,47 @@ bot.on('callback_query', async (query) => {
         });
     }
   }
+
+  // V5 Switch PC handler
+  if (query.data && query.data.startsWith('switchpc_')) {
+    const parts = query.data.replace('switchpc_', '').split('___');
+    const newPCName = parts[0];
+    const newPCIp = parts[1] === 'local' ? null : parts[1];
+
+    // Verificar que el agente remoto esté online (si es remoto)
+    let statusText = '';
+    if (newPCIp) {
+      try {
+        const pingResult = await new Promise<string>((resolve) => {
+          const req = http.get(`http://${newPCIp}:${process.env.AGENT_PORT || '4910'}/ping`, (res) => {
+            let data = '';
+            res.on('data', c => data += c);
+            res.on('end', () => resolve(data));
+          });
+          req.on('error', () => resolve('offline'));
+          req.setTimeout(3000, () => { req.destroy(); resolve('timeout'); });
+        });
+        const parsed = JSON.parse(pingResult);
+        statusText = `✅ Agente online en *${parsed.pc}*`;
+      } catch {
+        statusText = `⚠️ No se pudo verificar el agente en ${newPCIp}. Igual se activó.`;
+      }
+    } else {
+      statusText = `🏠 Modo local activado`;
+    }
+
+    activePCName = newPCName;
+    activePCIp = newPCIp;
+    initChatSession(); // Reset contexto al cambiar de PC
+
+    await bot.editMessageText(
+      `🔀 *Cambiado a: ${activePCName}*\n${statusText}\n\n_Contexto limpiado. Listo para operar._`,
+      { chat_id: chatId, message_id: query.message?.message_id, parse_mode: 'Markdown' }
+    );
+    await bot.sendMessage(chatId, `💻 *PC Activa: ${activePCName}*`, { parse_mode: 'Markdown', ...getMainMenu() });
+  }
+
+
 
   // V4 Multiple Skill handling
   if (query.data && query.data.startsWith('skill_')) {
@@ -330,10 +432,24 @@ bot.on('message', async (msg) => {
     return;
   }
 
+  if (text === '🔀 Switch PC') {
+    const pcs = getPCList();
+    const keyboard = pcs.map(pc => [{
+      text: `${pc.name === activePCName ? '✅' : '🖥'} ${pc.name}${pc.ip ? ` (${pc.ip})` : ' (esta PC)'}`,
+      callback_data: `switchpc_${pc.name}___${pc.ip || 'local'}`
+    }]);
+    await bot.sendMessage(chatId, '🔀 *Selecciona la PC a controlar:*', {
+      parse_mode: 'Markdown',
+      reply_markup: { inline_keyboard: keyboard }
+    });
+    return;
+  }
+
   // AI Router
   try {
     const shortRole = activeSkills.length > 0 ? `${activeSkills.length} skills` : 'Generalista';
-    const statusMsg = await bot.sendMessage(chatId, `💭 _[${shortRole}] Pensando sobre ${currentCwd}..._`, { parse_mode: 'Markdown' });
+    const pcTag = activePCIp ? `[${activePCName}]` : '[local]';
+    const statusMsg = await bot.sendMessage(chatId, `💭 _${pcTag} [${shortRole}] Pensando..._`, { parse_mode: 'Markdown' });
     let response = await chatHistory.sendMessage(text);
     let functionCall = response.response.functionCalls()?.[0];
     
@@ -351,11 +467,17 @@ bot.on('message', async (msg) => {
         
         let execResult = "";
         try {
-            const { stdout, stderr } = await execAsync(theCommand, { cwd: currentCwd, shell: 'powershell.exe' });
-            execResult = stdout || stderr || "Ejecución completada.";
+            if (activePCIp) {
+                // Ejecutar remotamente en el agente esclavo
+                execResult = await proxyToAgent(activePCIp, theCommand, currentCwd);
+            } else {
+                // Ejecutar localmente
+                const { stdout, stderr } = await execAsync(theCommand, { cwd: currentCwd, shell: 'powershell.exe' });
+                execResult = stdout || stderr || "Ejecución completada.";
+            }
         } catch (err: any) {
             execResult = "Error ejecutando comando: " + err.message;
-            console.error(`[EXEC ERROR]: ${execResult}`); // LOG para debug
+            console.error(`[EXEC ERROR]: ${execResult}`);
         }
 
         await bot.editMessageText(`🔄 [${shortRole}] Evaluando salida (Paso ${loopCount})...`, { chat_id: chatId, message_id: statusMsg.message_id });
