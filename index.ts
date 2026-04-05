@@ -5,6 +5,7 @@ import { promisify } from 'util';
 import * as os from 'os';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as http from 'http';
 import { GoogleGenerativeAI, FunctionDeclaration, SchemaType } from '@google/generative-ai';
 
 dotenv.config();
@@ -18,7 +19,7 @@ if (!token || !allowedUserId || !geminiKey) {
   process.exit(1);
 }
 
-const bot = new TelegramBot(token, { polling: true });
+const bot = new TelegramBot(token, { polling: false }); // Polling diferido
 const execAsync = promisify(exec);
 const genAI = new GoogleGenerativeAI(geminiKey);
 
@@ -61,7 +62,7 @@ function compileSkillsPrompt() {
 function initChatSession() {
   const currentRoleStr = activeSkills.length > 0 ? activeSkills.join(', ') : "Arquitecto Generalista";
   
-  const sysInst = `Eres Antigravity Mobile (Agente Múltiple).\n📁 RUT ACTIVA: ${currentCwd}\n🎭 SKILLS: ${currentRoleStr}\n\n${currentSkillPrompt}\n\n===================================\n⚠️ DIRECTRIZ CRÍTICA DE INTERACCION PARA TELEGRAM (MÓVIL) ⚠️\nEsta regla sobrescribe cualquier otra instrucción previa:\n1. OBLIGATORIO: Tu respuesta NO PUEDE superar las 50 palabras máximas. El usuario está en celular, se ahogará en texto.\n2. COMUNÍCATE SOLO CON 2 O 3 BULLET POINTS cortos y Emojis.\n3. JAMÁS incluyes código fuente, bloques de bash o logs de errores largos en tus respuestas visuales en Telegram. Si encuentras un error o creas un archivo, solo avisa "✅ Archivo X creado" o "❌ Error en dependencia Y, lo arreglaré".\n4. Si el usuario no te pide que expongas el código explícitamente, TÚ NUNCA DEBES MOSTRARLO EN EL CHAT. Solo haz el trabajo silenciosamente mediante 'run_powershell_command' y repórtalo en 1 o 2 líneas ejecutivas.\n5. Tu tono debe ser directo, ejecutivo y minimalista.`;
+  const sysInst = `Eres Antigravity Mobile (Agente Múltiple).\n📁 RUT ACTIVA: ${currentCwd}\n🎭 SKILLS: ${currentRoleStr}\n\n${currentSkillPrompt}\n\n===================================\n⚠️ DIRECTRIZ CRÍTICA DE INTERACCION PARA TELEGRAM (MÓVIL) ⚠️\nEsta regla sobrescribe cualquier otra instrucción previa:\n1. OBLIGATORIO: Tu respuesta NO PUEDE superar las 50 palabras máximas. El usuario está en celular, se ahogará en texto.\n2. COMUNÍCATE SOLO CON 2 O 3 BULLET POINTS cortos y Emojis.\n3. JAMÁS incluyes código fuente, bloques de bash o logs de errores largos. PERO si una ejecución de consola FALLA, debes decir explícitamente cuál fue la causa técnica corta del error (ej. "❌ Error Git: origin already exists" o "❌ Access Denied") para que el usuario sepa qué pasó.\n4. Si el usuario no te pide revelar código, NUNCA LO MUESTRES en chat. Trabaja con 'run_powershell_command' y repórtalo en 1 o 2 líneas ejecutivas.\n5. Tu tono debe ser directo, ejecutivo y minimalista.`;
 
   model = genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
@@ -71,10 +72,48 @@ function initChatSession() {
 
   chatHistory = model.startChat({});
 }
+// ----------------------------------------------------
+// ANTI-GHOST PROCESS (SENTINEL PORT)
+// ----------------------------------------------------
+const SENTINEL_PORT = 4909;
+
+function enforceSingleInstance(): Promise<void> {
+  return new Promise((resolve) => {
+    const server = http.createServer((req, res) => {
+      if (req.url === '/kill') {
+        res.writeHead(200);
+        res.end('OK');
+        console.log('💀 Clon nuevo detectado. Apagando proceso viejo...');
+        process.exit(0);
+      }
+    });
+
+    server.once('error', (e: any) => {
+      if (e.code === 'EADDRINUSE') {
+        console.log('🤖 Clon viejo de The Matrix detectado. Asesinándolo...');
+        http.get(`http://127.0.0.1:${SENTINEL_PORT}/kill`, () => {
+          setTimeout(() => enforceSingleInstance().then(resolve), 800);
+        }).on('error', () => {
+          setTimeout(() => enforceSingleInstance().then(resolve), 800);
+        });
+      } else {
+        resolve();
+      }
+    });
+
+    server.listen(SENTINEL_PORT, '127.0.0.1', () => {
+      resolve();
+    });
+  });
+}
+
 // Init V4
 initChatSession();
 
-console.log('🚀 Servicio Antigravity V4 (Omni-Skills) Iniciado...');
+enforceSingleInstance().then(() => {
+    bot.startPolling();
+    console.log('🚀 Servicio Antigravity V4 Iniciado [INSTANCIA ÚNICA PROTEGIDA]');
+});
 
 async function sendChunkedMessage(chatId: number, text: string) {
   const MAX_LENGTH = 4000;
@@ -255,33 +294,37 @@ bot.on('message', async (msg) => {
     let response = await chatHistory.sendMessage(text);
     let functionCall = response.response.functionCalls()?.[0];
     
-    if (functionCall && functionCall.name === "run_powershell_command") {
+    let loopCount = 0;
+    while (functionCall && functionCall.name === "run_powershell_command" && loopCount < 5) {
+        loopCount++;
         const cmdArgs = functionCall.args as { command: string };
         const theCommand = cmdArgs.command;
+        console.log(`[AI COMMAND ${loopCount}]: ${theCommand}`); // LOG para debug
         
-        await bot.editMessageText(`🛠️ [${shortRole}] Ejecutando...\n${theCommand.substring(0, 500)}`, { chat_id: chatId, message_id: statusMsg.message_id });
+        await bot.editMessageText(`🛠️ [${shortRole}] Ejecutando (Paso ${loopCount}/5)...\n${theCommand.substring(0, 500)}`, { chat_id: chatId, message_id: statusMsg.message_id });
         
         let execResult = "";
         try {
-            const { stdout, stderr } = await execAsync(theCommand, { cwd: currentCwd });
+            const { stdout, stderr } = await execAsync(theCommand, { cwd: currentCwd, shell: 'powershell.exe' });
             execResult = stdout || stderr || "Ejecución completada.";
         } catch (err: any) {
             execResult = "Error ejecutando comando: " + err.message;
+            console.error(`[EXEC ERROR]: ${execResult}`); // LOG para debug
         }
 
-        await bot.editMessageText(`🔄 [${shortRole}] Evaluando salida de consola...`, { chat_id: chatId, message_id: statusMsg.message_id });
+        await bot.editMessageText(`🔄 [${shortRole}] Evaluando salida...`, { chat_id: chatId, message_id: statusMsg.message_id });
         
-        const finalResponse = await chatHistory.sendMessage([{
+        response = await chatHistory.sendMessage([{
             functionResponse: { name: "run_powershell_command", response: { result: execResult } }
         }]);
+        functionCall = response.response.functionCalls()?.[0];
+    }
 
-        await bot.editMessageText(finalResponse.response.text() || "✅ Listo.", { chat_id: chatId, message_id: statusMsg.message_id });
-
+    const cleanText = response.response.text();
+    if (cleanText) {
+        await bot.editMessageText(cleanText, { chat_id: chatId, message_id: statusMsg.message_id });
     } else {
-        const cleanText = response.response.text();
-        if (cleanText) {
-          await bot.editMessageText(cleanText, { chat_id: chatId, message_id: statusMsg.message_id });
-        }
+        await bot.editMessageText("✅ Tarea completada sin comentarios adicionales.", { chat_id: chatId, message_id: statusMsg.message_id });
     }
 
   } catch (error: any) {
