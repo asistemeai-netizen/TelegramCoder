@@ -23,12 +23,11 @@ module.exports = {
       merge_logs: true,
     },
 
-    // ── Agente (BillyLaptop - corre agent.ts) ────────────────
+    // ── Agente (BillyLaptop - ahora corre index.ts también para ser un Full Maestro) ────────────────
     {
       name: 'antigravity-agent',
-      script: 'agent.ts',
-      interpreter: 'tsx',
-      interpreter_args: '',
+      script: 'npm',
+      args: 'run start',
       cwd: __dirname,
       env_file: '.env',
       watch: false,

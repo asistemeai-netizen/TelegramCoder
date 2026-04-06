@@ -53,8 +53,7 @@ async function proxyToAgent(ip: string, command: string, cwd: string): Promise<s
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(body),
-        'x-agent-secret': AGENT_SECRET
+        'Content-Length': Buffer.byteLength(body)
       },
       timeout: 65000
     };
@@ -156,8 +155,14 @@ ${currentSkillPrompt}
 // ----------------------------------------------------
 const SENTINEL_PORT = 4909;
 
+let isSentinelRunning = false;
+
 function enforceSingleInstance(): Promise<void> {
   return new Promise((resolve) => {
+    if (isSentinelRunning) {
+      resolve();
+      return;
+    }
     const server = http.createServer((req, res) => {
       if (req.url === '/kill') {
         res.writeHead(200);
@@ -181,6 +186,7 @@ function enforceSingleInstance(): Promise<void> {
     });
 
     server.listen(SENTINEL_PORT, '127.0.0.1', () => {
+      isSentinelRunning = true;
       resolve();
     });
   });
@@ -213,12 +219,12 @@ function startDBWatcher() {
     LOCAL_PC_NAME,
     3000, // Revisar DB cada 3 segundos
     async () => {
-      // Esta PC debe activarse
       console.log(`⚡ [${LOCAL_PC_NAME}] DB: Activando polling...`);
       activePCName = LOCAL_PC_NAME;
-      activePCIp = null;
       initChatSession();
-      enforceSingleInstance().then(() => bot.startPolling());
+      enforceSingleInstance().then(() => {
+        if (!bot.isPolling()) bot.startPolling();
+      });
     },
     async () => {
       // Esta PC debe dormirse
@@ -282,7 +288,7 @@ function getSkillsKeyboard() {
 }
 
 function getMainMenu() {
-  const pcLabel = activePCIp ? `🖥 PC: ${activePCName} (remoto)` : `💻 PC: ${activePCName} (local)`;
+  const pcLabel = `💻 PC: ${activePCName} (local)`;
   return {
     reply_markup: {
       keyboard: [
@@ -300,7 +306,7 @@ bot.onText(/\/start|\/menu/, async (msg) => {
   if (msg.from?.id.toString() !== allowedUserId) return;
   await bot.sendMessage(
     msg.chat.id, 
-    `⚡ *Antigravity V5 — Multi-PC*\n\n💻 Controlando: *${activePCName}*\nEstado: ${activePCIp ? '🌐 Remoto' : '🏠 Local'}`, 
+    `⚡ *Antigravity V5 — Multi-PC*\n\n💻 Controlando: *${activePCName}*\nEstado: 🏠 Local`, 
     { parse_mode: 'Markdown', ...getMainMenu() }
   );
 });

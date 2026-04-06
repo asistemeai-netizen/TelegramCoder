@@ -132,7 +132,7 @@ bot.onText(/\/start|\/menu/, async (msg) => {
           [{ text: '📂 Archivos' }, { text: '📍 Contexto' }],
           [{ text: '🔙 Volver al Maestro' }]
         ],
-        resize_keyboard: true, persistent: true
+        resize_keyboard: true, is_persistent: true
     }}
   );
 });
@@ -190,7 +190,17 @@ async function handleAIMessage(chatId: number, text: string) {
     }
 
     const reply = response.response.text() || '✅ Hecho.';
-    await bot.editMessageText(reply, { chat_id: chatId, message_id: statusMsg.message_id });
+    await bot.deleteMessage(chatId, statusMsg.message_id).catch(() => {});
+    await bot.sendMessage(chatId, reply, { 
+      parse_mode: 'Markdown',
+      reply_markup: {
+        keyboard: [
+          [{ text: '📂 Archivos' }, { text: '📍 Contexto' }],
+          [{ text: '🔙 Volver al Maestro' }]
+        ],
+        resize_keyboard: true, is_persistent: true
+      }
+    });
   } catch (e: any) {
     await bot.editMessageText(`❌ ${e.message?.substring(0, 200)}`, { chat_id: chatId, message_id: statusMsg.message_id });
   }
