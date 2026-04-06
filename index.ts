@@ -21,6 +21,59 @@ if (!token || !allowedUserId || !geminiKey) {
 }
 
 const bot = new TelegramBot(token, { polling: false }); // Polling diferido
+
+// Global Exception Handlers
+process.on('uncaughtException', (err: any) => {
+    if (err.message === 'STARTUP_LOOP_ABORT') {
+        setInterval(() => {}, 100000); // Keep alive until PM2 stops us
+        return;
+    }
+    console.error(`[UNCAUGHT] ${err.message}`, err);
+    process.exit(1);
+});
+process.on('unhandledRejection', (reason) => {
+    console.error(`[UNHANDLED]`, reason);
+    process.exit(1);
+});
+
+bot.on('polling_error', (error: any) => {
+  console.log(`[POLLING ERROR]: ${error.code} - ${error.message}`);
+});
+
+// --- RESTART LOOP PROTECTOR ---
+const CRASH_LOG_FILE = path.join(__dirname, '.crash_count.json');
+try {
+  let crashData = { count: 0, lastCrash: 0 };
+  if (fs.existsSync(CRASH_LOG_FILE)) {
+    crashData = JSON.parse(fs.readFileSync(CRASH_LOG_FILE, 'utf-8'));
+  }
+  const now = Date.now();
+  if (now - crashData.lastCrash < 60000) { // Si falló hace menos de 1 min
+    crashData.count++;
+  } else {
+    crashData.count = 1; // Reseteamos si ha sido estable
+  }
+  crashData.lastCrash = now;
+  fs.writeFileSync(CRASH_LOG_FILE, JSON.stringify(crashData));
+
+  if (crashData.count >= 5) {
+    console.error(`🚨 DETECTADO LOOP DE CRASHEOS (${crashData.count} veces). Entrando en coma inducido.`);
+    const LocalPC = process.env.PC_NAME || os.hostname();
+    bot.sendMessage(allowedUserId, `🚨 *EMERGENCIA: STARTUP LOOP* 🚨\n\n💻 PC: \`${LocalPC}\`\n\nEl sistema ha fallado repetidamente al iniciar. Deteniendo proceso en PM2 para no saturar.`, {parse_mode: 'Markdown'})
+      .catch(console.error)
+      .finally(() => {
+         const { exec: reqExec } = require('child_process');
+         reqExec(`pm2 stop ${process.env.name || 'antigravity-agent'}`, () => {
+             process.exit(1);
+         });
+      });
+    throw new Error('STARTUP_LOOP_ABORT');
+  }
+} catch (e: any) {
+  if (e.message === 'STARTUP_LOOP_ABORT') throw e;
+  console.error("Error en limitador de reinicios:", e);
+}
+
 const execAsync = promisify(exec);
 const genAI = new GoogleGenerativeAI(geminiKey);
 
@@ -34,6 +87,7 @@ let currentSkillPrompt = '';
 // Multi-PC State
 const LOCAL_PC_NAME = process.env.PC_NAME || os.hostname();
 let activePCName: string = LOCAL_PC_NAME;
+let activePCIp: string | null = null;
 
 // Lista de PCs conocidas (se construye dinamicamente desde la DB)
 function getPCList(): { name: string; ip: string | null }[] {

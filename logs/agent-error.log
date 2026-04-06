@@ -1,0 +1,1488 @@
+2026-04-05 20:23:30: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:23:30:       activePCIp = null;
+2026-04-05 20:23:30:       ^
+2026-04-05 20:23:30: 
+2026-04-05 20:23:30: ReferenceError: activePCIp is not defined
+2026-04-05 20:23:30:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:23:30:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:23:30:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:23:30: 
+2026-04-05 20:23:30: Node.js v24.14.0
+2026-04-05 20:23:38: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:23:38:       activePCIp = null;
+2026-04-05 20:23:38:       ^
+2026-04-05 20:23:38: 
+2026-04-05 20:23:38: ReferenceError: activePCIp is not defined
+2026-04-05 20:23:38:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:23:38:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:23:38:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:23:38: 
+2026-04-05 20:23:38: Node.js v24.14.0
+2026-04-05 20:23:47: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:23:47:       activePCIp = null;
+2026-04-05 20:23:47:       ^
+2026-04-05 20:23:47: 
+2026-04-05 20:23:47: ReferenceError: activePCIp is not defined
+2026-04-05 20:23:47:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:23:47:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:23:47:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:23:47: 
+2026-04-05 20:23:47: Node.js v24.14.0
+2026-04-05 20:23:55: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:23:55:       activePCIp = null;
+2026-04-05 20:23:55:       ^
+2026-04-05 20:23:55: 
+2026-04-05 20:23:55: ReferenceError: activePCIp is not defined
+2026-04-05 20:23:55:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:23:55:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:23:55:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:23:55: 
+2026-04-05 20:23:55: Node.js v24.14.0
+2026-04-05 20:24:03: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:24:03:       activePCIp = null;
+2026-04-05 20:24:03:       ^
+2026-04-05 20:24:03: 
+2026-04-05 20:24:03: ReferenceError: activePCIp is not defined
+2026-04-05 20:24:03:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:24:03:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:24:03:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:24:03: 
+2026-04-05 20:24:03: Node.js v24.14.0
+2026-04-05 20:24:11: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:24:11:       activePCIp = null;
+2026-04-05 20:24:11:       ^
+2026-04-05 20:24:11: 
+2026-04-05 20:24:11: ReferenceError: activePCIp is not defined
+2026-04-05 20:24:11:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:24:11:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:24:11:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:24:11: 
+2026-04-05 20:24:11: Node.js v24.14.0
+2026-04-05 20:24:20: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:24:20:       activePCIp = null;
+2026-04-05 20:24:20:       ^
+2026-04-05 20:24:20: 
+2026-04-05 20:24:20: ReferenceError: activePCIp is not defined
+2026-04-05 20:24:20:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:24:20:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:24:20:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:24:20: 
+2026-04-05 20:24:20: Node.js v24.14.0
+2026-04-05 20:24:28: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:24:28:       activePCIp = null;
+2026-04-05 20:24:28:       ^
+2026-04-05 20:24:28: 
+2026-04-05 20:24:28: ReferenceError: activePCIp is not defined
+2026-04-05 20:24:28:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:24:28:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:24:28:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:24:28: 
+2026-04-05 20:24:28: Node.js v24.14.0
+2026-04-05 20:24:36: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219
+2026-04-05 20:24:36:     },
+2026-04-05 20:24:36:      ^
+2026-04-05 20:24:36: 
+2026-04-05 20:24:36: ReferenceError: activePCIp is not defined
+2026-04-05 20:24:36:     at <anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:219:7)
+2026-04-05 20:24:36:     at Timeout._onTimeout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:81:9)
+2026-04-05 20:24:36:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:24:36: 
+2026-04-05 20:24:36: Node.js v24.14.0
+2026-04-05 20:32:52: ^C
+2026-04-05 20:40:15: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:40:15:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:40:15:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:40:15:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:40:15:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:40:15:     at Array.forEach (<anonymous>)
+2026-04-05 20:40:15:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:40:15:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:40:15:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:40:15:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:40:15:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:40:15:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:40:15:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:40:15:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:40:15:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:40:15:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:40:15:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:40:35: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:40:35:       activePCIp   = null;
+2026-04-05 20:40:35:       ^
+2026-04-05 20:40:35: 
+2026-04-05 20:40:35: ReferenceError: activePCIp is not defined
+2026-04-05 20:40:35:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:40:35:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:40:35: 
+2026-04-05 20:40:35: Node.js v24.14.0
+2026-04-05 20:40:40: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:40:40:       activePCIp   = null;
+2026-04-05 20:40:40:       ^
+2026-04-05 20:40:40: 
+2026-04-05 20:40:40: ReferenceError: activePCIp is not defined
+2026-04-05 20:40:40:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:40:40:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:40:40: 
+2026-04-05 20:40:40: Node.js v24.14.0
+2026-04-05 20:40:46: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:40:46:       activePCIp   = null;
+2026-04-05 20:40:46:       ^
+2026-04-05 20:40:46: 
+2026-04-05 20:40:46: ReferenceError: activePCIp is not defined
+2026-04-05 20:40:46:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:40:46:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:40:46: 
+2026-04-05 20:40:46: Node.js v24.14.0
+2026-04-05 20:40:52: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:40:52:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:40:52:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:40:52:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:40:52:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:40:52:     at Array.forEach (<anonymous>)
+2026-04-05 20:40:52:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:40:52:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:40:52:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:40:52:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:40:52:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:40:52:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:40:52:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:40:52:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:40:52:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:40:52:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:40:52:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:40:52: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:40:52:       activePCIp   = null;
+2026-04-05 20:40:52:       ^
+2026-04-05 20:40:52: 
+2026-04-05 20:40:52: ReferenceError: activePCIp is not defined
+2026-04-05 20:40:52:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:40:52:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:40:52: 
+2026-04-05 20:40:52: Node.js v24.14.0
+2026-04-05 20:40:58: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:40:58:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:40:58:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:40:58:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:40:58:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:40:58:     at Array.forEach (<anonymous>)
+2026-04-05 20:40:58:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:40:58:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:40:58:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:40:58:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:40:58:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:40:58:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:40:58:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:40:58:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:40:58:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:40:58:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:40:58:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:40:58: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:40:58:       activePCIp   = null;
+2026-04-05 20:40:58:       ^
+2026-04-05 20:40:58: 
+2026-04-05 20:40:58: ReferenceError: activePCIp is not defined
+2026-04-05 20:40:58:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:40:58:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:40:58: 
+2026-04-05 20:40:58: Node.js v24.14.0
+2026-04-05 20:41:04: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:04:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:04:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:04:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:04:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:04:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:04:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:04:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:04:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:04:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:04:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:04:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:04:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:04:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:04:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:04:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:04:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:04: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:04:       activePCIp   = null;
+2026-04-05 20:41:04:       ^
+2026-04-05 20:41:04: 
+2026-04-05 20:41:04: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:04:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:04:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:04: 
+2026-04-05 20:41:04: Node.js v24.14.0
+2026-04-05 20:41:09: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:09:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:09:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:09:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:09:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:09:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:09:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:09:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:09:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:09:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:09:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:09:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:09:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:09:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:09:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:09:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:09:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:10: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:10:       activePCIp   = null;
+2026-04-05 20:41:10:       ^
+2026-04-05 20:41:10: 
+2026-04-05 20:41:10: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:10:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:10:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:10: 
+2026-04-05 20:41:10: Node.js v24.14.0
+2026-04-05 20:41:16: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:16:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:16:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:16:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:16:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:16:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:16:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:16:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:16:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:16:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:16:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:16:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:16:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:16:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:16:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:16:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:16:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:16: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:16:       activePCIp   = null;
+2026-04-05 20:41:16:       ^
+2026-04-05 20:41:16: 
+2026-04-05 20:41:16: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:16:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:16:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:16: 
+2026-04-05 20:41:16: Node.js v24.14.0
+2026-04-05 20:41:21: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:21:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:21:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:21:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:21:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:21:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:21:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:21:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:21:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:21:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:21:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:21:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:21:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:21:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:21:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:21:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:21:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:21: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:21:       activePCIp   = null;
+2026-04-05 20:41:21:       ^
+2026-04-05 20:41:21: 
+2026-04-05 20:41:21: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:21:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:21:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:21: 
+2026-04-05 20:41:21: Node.js v24.14.0
+2026-04-05 20:41:31: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\pg-pool@3.13.0_pg@8.20.0\node_modules\pg-pool\index.js:45
+2026-04-05 20:41:31:     Error.captureStackTrace(err)
+2026-04-05 20:41:31:           ^
+2026-04-05 20:41:31: 
+2026-04-05 20:41:31: Error: Connection terminated due to connection timeout
+2026-04-05 20:41:31:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\pg-pool@3.13.0_pg@8.20.0\node_modules\pg-pool\index.js:45:11
+2026-04-05 20:41:31:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:31:     at async initControlTable (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\db.ts:16:3)
+2026-04-05 20:41:31:     at async startMaster (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:199:3) {
+2026-04-05 20:41:31:   [cause]: Error: Connection terminated unexpectedly
+2026-04-05 20:41:31:       at Connection.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\pg@8.20.0\node_modules\pg\lib\client.js:180:73)
+2026-04-05 20:41:31:       at Object.onceWrapper (node:events:622:28)
+2026-04-05 20:41:31:       at Connection.emit (node:events:508:28)
+2026-04-05 20:41:31:       at Socket.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\pg@8.20.0\node_modules\pg\lib\connection.js:61:12)
+2026-04-05 20:41:31:       at Socket.emit (node:events:508:28)
+2026-04-05 20:41:31:       at TCP.<anonymous> (node:net:346:12)
+2026-04-05 20:41:31: }
+2026-04-05 20:41:31: 
+2026-04-05 20:41:31: Node.js v24.14.0
+2026-04-05 20:41:37: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:37:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:37:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:37:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:37:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:37:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:37:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:37:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:37:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:37:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:37:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:37:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:37:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:37:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:37:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:37:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:37:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:37: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:37:       activePCIp   = null;
+2026-04-05 20:41:37:       ^
+2026-04-05 20:41:37: 
+2026-04-05 20:41:37: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:37:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:37:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:37: 
+2026-04-05 20:41:37: Node.js v24.14.0
+2026-04-05 20:41:42: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:42:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:42:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:42:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:42:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:42:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:42:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:42:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:42:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:42:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:42:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:42:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:42:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:42:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:42:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:42:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:42:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:42: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:42:       activePCIp   = null;
+2026-04-05 20:41:42:       ^
+2026-04-05 20:41:42: 
+2026-04-05 20:41:42: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:42:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:42:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:42: 
+2026-04-05 20:41:42: Node.js v24.14.0
+2026-04-05 20:41:48: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:48:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:48:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:48:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:48:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:48:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:48:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:48:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:48:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:48:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:48:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:48:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:48:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:48:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:48:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:48:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:48:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:48: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:48:       activePCIp   = null;
+2026-04-05 20:41:48:       ^
+2026-04-05 20:41:48: 
+2026-04-05 20:41:48: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:48:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:48:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:48: 
+2026-04-05 20:41:48: Node.js v24.14.0
+2026-04-05 20:41:54: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:41:54:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:41:54:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:41:54:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:41:54:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:41:54:     at Array.forEach (<anonymous>)
+2026-04-05 20:41:54:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:41:54:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:41:54:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:41:54:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:41:54:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:41:54:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:41:54:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:41:54:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:41:54:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:41:54:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:41:54:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:41:54: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:41:54:       activePCIp   = null;
+2026-04-05 20:41:54:       ^
+2026-04-05 20:41:54: 
+2026-04-05 20:41:54: ReferenceError: activePCIp is not defined
+2026-04-05 20:41:54:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:41:54:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:41:54: 
+2026-04-05 20:41:54: Node.js v24.14.0
+2026-04-05 20:42:00: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:00:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:00:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:00:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:00:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:00:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:00:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:00:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:00:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:00:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:00:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:00:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:00:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:00:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:00:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:00:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:00:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:00: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:00:       activePCIp   = null;
+2026-04-05 20:42:00:       ^
+2026-04-05 20:42:00: 
+2026-04-05 20:42:00: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:00:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:00:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:00: 
+2026-04-05 20:42:00: Node.js v24.14.0
+2026-04-05 20:42:06: ^C
+2026-04-05 20:42:13: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:13:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:13:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:13:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:13:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:13:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:13:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:13:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:13:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:13:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:13:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:13:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:13:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:13:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:13:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:13:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:13:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:13: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:13:       activePCIp   = null;
+2026-04-05 20:42:13:       ^
+2026-04-05 20:42:13: 
+2026-04-05 20:42:13: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:13:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:13:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:13: 
+2026-04-05 20:42:13: Node.js v24.14.0
+2026-04-05 20:42:19: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:19:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:19:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:19:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:19:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:19:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:19:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:19:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:19:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:19:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:19:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:19:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:19:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:19:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:19:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:19:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:19:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:19: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:19:       activePCIp   = null;
+2026-04-05 20:42:19:       ^
+2026-04-05 20:42:19: 
+2026-04-05 20:42:19: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:19:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:19:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:19: 
+2026-04-05 20:42:19: Node.js v24.14.0
+2026-04-05 20:42:24: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:24:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:24:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:24:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:24:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:24:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:24:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:24:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:24:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:24:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:24:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:24:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:24:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:24:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:24:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:24:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:24:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:25: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:25:       activePCIp   = null;
+2026-04-05 20:42:25:       ^
+2026-04-05 20:42:25: 
+2026-04-05 20:42:25: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:25:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:25:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:25: 
+2026-04-05 20:42:25: Node.js v24.14.0
+2026-04-05 20:42:30: ^C
+2026-04-05 20:42:37: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:37:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:37:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:37:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:37:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:37:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:37:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:37:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:37:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:37:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:37:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:37:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:37:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:37:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:37:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:37:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:37:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:37: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:37:       activePCIp   = null;
+2026-04-05 20:42:37:       ^
+2026-04-05 20:42:37: 
+2026-04-05 20:42:37: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:37:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:37:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:37: 
+2026-04-05 20:42:37: Node.js v24.14.0
+2026-04-05 20:42:43: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:43:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:43:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:43:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:43:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:43:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:43:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:43:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:43:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:43:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:43:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:43:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:43:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:43:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:43:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:43:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:43:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:43: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:43:       activePCIp   = null;
+2026-04-05 20:42:43:       ^
+2026-04-05 20:42:43: 
+2026-04-05 20:42:43: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:43:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:43:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:43: 
+2026-04-05 20:42:43: Node.js v24.14.0
+2026-04-05 20:42:49: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:49:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:49:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:49:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:49:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:49:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:49:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:49:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:49:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:49:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:49:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:49:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:49:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:49:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:49:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:49:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:49:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:49: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:49:       activePCIp   = null;
+2026-04-05 20:42:49:       ^
+2026-04-05 20:42:49: 
+2026-04-05 20:42:49: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:49:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:49:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:49: 
+2026-04-05 20:42:49: Node.js v24.14.0
+2026-04-05 20:42:55: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:42:55:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:42:55:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:42:55:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:42:55:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:42:55:     at Array.forEach (<anonymous>)
+2026-04-05 20:42:55:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:42:55:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:42:55:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:42:55:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:42:55:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:42:55:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:42:55:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:42:55:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:42:55:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:42:55:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:42:55:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:42:55: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:42:55:       activePCIp   = null;
+2026-04-05 20:42:55:       ^
+2026-04-05 20:42:55: 
+2026-04-05 20:42:55: ReferenceError: activePCIp is not defined
+2026-04-05 20:42:55:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:42:55:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:42:55: 
+2026-04-05 20:42:55: Node.js v24.14.0
+2026-04-05 20:43:02: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:43:02:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:43:02:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:43:02:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:43:02:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:43:02:     at Array.forEach (<anonymous>)
+2026-04-05 20:43:02:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:43:02:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:43:02:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:43:02:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:43:02:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:43:02:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:43:02:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:43:02:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:43:02:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:43:02:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:43:02:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:43:02: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:43:02:       activePCIp   = null;
+2026-04-05 20:43:02:       ^
+2026-04-05 20:43:02: 
+2026-04-05 20:43:02: ReferenceError: activePCIp is not defined
+2026-04-05 20:43:02:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:43:02:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:43:02: 
+2026-04-05 20:43:02: Node.js v24.14.0
+2026-04-05 20:43:08: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:43:08:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:43:08:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:43:08:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:43:08:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:43:08:     at Array.forEach (<anonymous>)
+2026-04-05 20:43:08:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:43:08:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:43:08:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:43:08:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:43:08:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:43:08:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:43:08:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:43:08:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:43:08:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:43:08:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:43:08:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:43:08: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:43:08:       activePCIp   = null;
+2026-04-05 20:43:08:       ^
+2026-04-05 20:43:08: 
+2026-04-05 20:43:08: ReferenceError: activePCIp is not defined
+2026-04-05 20:43:08:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:43:08:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:43:08: 
+2026-04-05 20:43:08: Node.js v24.14.0
+2026-04-05 20:43:14: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:43:14:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:43:14:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:43:14:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:43:14:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:43:14:     at Array.forEach (<anonymous>)
+2026-04-05 20:43:14:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:43:14:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:43:14:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:43:14:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:43:14:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:43:14:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:43:14:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:43:14:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:43:14:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:43:14:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:43:14:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:43:14: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364
+2026-04-05 20:43:14:       activePCIp   = null;
+2026-04-05 20:43:14:       ^
+2026-04-05 20:43:14: 
+2026-04-05 20:43:14: ReferenceError: activePCIp is not defined
+2026-04-05 20:43:14:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:364:7)
+2026-04-05 20:43:14:     at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+2026-04-05 20:43:14: 
+2026-04-05 20:43:14: Node.js v24.14.0
+2026-04-05 20:43:19: [BOT ERROR] ReferenceError: activePCIp is not defined
+2026-04-05 20:43:19:     at TelegramBot.<anonymous> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:482:19)
+2026-04-05 20:43:19:     at TelegramBot.emit (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\eventemitter3@3.1.2\node_modules\eventemitter3\index.js:182:35)
+2026-04-05 20:43:19:     at TelegramBot.processUpdate (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegram.js:794:12)
+2026-04-05 20:43:19:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:110:22
+2026-04-05 20:43:19:     at Array.forEach (<anonymous>)
+2026-04-05 20:43:19:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\node-telegram-bot-api@0.67.0_request@2.88.2\node_modules\node-telegram-bot-api\src\telegramPolling.js:106:17
+2026-04-05 20:43:19:     at tryCatcher (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\util.js:16:23)
+2026-04-05 20:43:19:     at Promise._settlePromiseFromHandler (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:547:31)
+2026-04-05 20:43:19:     at Promise._settlePromise (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:604:18)
+2026-04-05 20:43:19:     at Promise._settlePromise0 (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:649:10)
+2026-04-05 20:43:19:     at Promise._settlePromises (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\promise.js:729:18)
+2026-04-05 20:43:19:     at _drainQueueStep (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:93:12)
+2026-04-05 20:43:19:     at _drainQueue (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:86:9)
+2026-04-05 20:43:19:     at Async._drainQueues (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:102:5)
+2026-04-05 20:43:19:     at Async.drainQueues [as _onImmediate] (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\bluebird@3.7.2\node_modules\bluebird\js\release\async.js:15:14)
+2026-04-05 20:43:19:     at process.processImmediate (node:internal/timers:504:21)
+2026-04-05 20:47:04: 
+2026-04-05 20:47:04: node:internal/modules/run_main:107
+2026-04-05 20:47:04:     triggerUncaughtException(
+2026-04-05 20:47:04:     ^
+2026-04-05 20:47:04: Error: Transform failed with 1 error:
+2026-04-05 20:47:04: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:04:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:04:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:04:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:04:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:04:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:04:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:04:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:04:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:04:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:04:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:04:   name: 'TransformError'
+2026-04-05 20:47:04: }
+2026-04-05 20:47:04: 
+2026-04-05 20:47:04: Node.js v24.14.0
+2026-04-05 20:47:08: 
+2026-04-05 20:47:08: node:internal/modules/run_main:107
+2026-04-05 20:47:08:     triggerUncaughtException(
+2026-04-05 20:47:08:     ^
+2026-04-05 20:47:08: Error: Transform failed with 1 error:
+2026-04-05 20:47:08: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:08:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:08:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:08:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:08:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:08:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:08:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:08:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:08:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:08:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:08:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:08:   name: 'TransformError'
+2026-04-05 20:47:08: }
+2026-04-05 20:47:08: 
+2026-04-05 20:47:08: Node.js v24.14.0
+2026-04-05 20:47:13: 
+2026-04-05 20:47:13: node:internal/modules/run_main:107
+2026-04-05 20:47:13:     triggerUncaughtException(
+2026-04-05 20:47:13:     ^
+2026-04-05 20:47:13: Error: Transform failed with 1 error:
+2026-04-05 20:47:13: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:13:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:13:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:13:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:13:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:13:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:13:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:13:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:13:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:13:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:13:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:13:   name: 'TransformError'
+2026-04-05 20:47:13: }
+2026-04-05 20:47:13: 
+2026-04-05 20:47:13: Node.js v24.14.0
+2026-04-05 20:47:17: 
+2026-04-05 20:47:17: node:internal/modules/run_main:107
+2026-04-05 20:47:17:     triggerUncaughtException(
+2026-04-05 20:47:17:     ^
+2026-04-05 20:47:17: Error: Transform failed with 1 error:
+2026-04-05 20:47:17: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:17:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:17:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:17:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:17:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:17:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:17:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:17:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:17:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:17:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:17:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:17:   name: 'TransformError'
+2026-04-05 20:47:17: }
+2026-04-05 20:47:17: 
+2026-04-05 20:47:17: Node.js v24.14.0
+2026-04-05 20:47:21: 
+2026-04-05 20:47:21: node:internal/modules/run_main:107
+2026-04-05 20:47:21:     triggerUncaughtException(
+2026-04-05 20:47:21:     ^
+2026-04-05 20:47:21: Error: Transform failed with 1 error:
+2026-04-05 20:47:21: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:21:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:21:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:21:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:21:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:21:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:21:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:21:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:21:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:21:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:21:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:21:   name: 'TransformError'
+2026-04-05 20:47:21: }
+2026-04-05 20:47:21: 
+2026-04-05 20:47:21: Node.js v24.14.0
+2026-04-05 20:47:25: 
+2026-04-05 20:47:25: node:internal/modules/run_main:107
+2026-04-05 20:47:25:     triggerUncaughtException(
+2026-04-05 20:47:25:     ^
+2026-04-05 20:47:25: Error: Transform failed with 1 error:
+2026-04-05 20:47:25: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:50:4: ERROR: Top-level return cannot be used inside an ECMAScript module
+2026-04-05 20:47:25:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:25:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:25:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:25:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:25:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:25:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:25:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:25:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:25:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:25:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:25:   name: 'TransformError'
+2026-04-05 20:47:25: }
+2026-04-05 20:47:25: 
+2026-04-05 20:47:25: Node.js v24.14.0
+2026-04-05 20:47:29: 
+2026-04-05 20:47:29: node:internal/modules/run_main:107
+2026-04-05 20:47:29:     triggerUncaughtException(
+2026-04-05 20:47:29:     ^
+2026-04-05 20:47:29: Error: Transform failed with 1 error:
+2026-04-05 20:47:29: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:29:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:29:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:29:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:29:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:29:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:29:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:29:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:29:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:29:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:29:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:29:   name: 'TransformError'
+2026-04-05 20:47:29: }
+2026-04-05 20:47:29: 
+2026-04-05 20:47:29: Node.js v24.14.0
+2026-04-05 20:47:33: 
+2026-04-05 20:47:33: node:internal/modules/run_main:107
+2026-04-05 20:47:33:     triggerUncaughtException(
+2026-04-05 20:47:33:     ^
+2026-04-05 20:47:33: Error: Transform failed with 1 error:
+2026-04-05 20:47:33: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:33:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:33:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:33:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:33:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:33:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:33:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:33:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:33:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:33:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:33:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:33:   name: 'TransformError'
+2026-04-05 20:47:33: }
+2026-04-05 20:47:33: 
+2026-04-05 20:47:33: Node.js v24.14.0
+2026-04-05 20:47:37: 
+2026-04-05 20:47:37: node:internal/modules/run_main:107
+2026-04-05 20:47:37:     triggerUncaughtException(
+2026-04-05 20:47:37:     ^
+2026-04-05 20:47:37: Error: Transform failed with 1 error:
+2026-04-05 20:47:37: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:37:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:37:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:37:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:37:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:37:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:37:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:37:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:37:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:37:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:37:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:37:   name: 'TransformError'
+2026-04-05 20:47:37: }
+2026-04-05 20:47:37: 
+2026-04-05 20:47:37: Node.js v24.14.0
+2026-04-05 20:47:41: 
+2026-04-05 20:47:41: node:internal/modules/run_main:107
+2026-04-05 20:47:41:     triggerUncaughtException(
+2026-04-05 20:47:41:     ^
+2026-04-05 20:47:41: Error: Transform failed with 1 error:
+2026-04-05 20:47:41: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:41:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:41:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:41:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:41:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:41:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:41:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:41:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:41:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:41:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:41:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:41:   name: 'TransformError'
+2026-04-05 20:47:41: }
+2026-04-05 20:47:41: 
+2026-04-05 20:47:41: Node.js v24.14.0
+2026-04-05 20:47:45: 
+2026-04-05 20:47:45: node:internal/modules/run_main:107
+2026-04-05 20:47:45:     triggerUncaughtException(
+2026-04-05 20:47:45:     ^
+2026-04-05 20:47:45: Error: Transform failed with 1 error:
+2026-04-05 20:47:45: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:45:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:45:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:45:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:45:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:45:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:45:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:45:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:45:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:45:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:45:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:45:   name: 'TransformError'
+2026-04-05 20:47:45: }
+2026-04-05 20:47:45: 
+2026-04-05 20:47:45: Node.js v24.14.0
+2026-04-05 20:47:50: 
+2026-04-05 20:47:50: node:internal/modules/run_main:107
+2026-04-05 20:47:50:     triggerUncaughtException(
+2026-04-05 20:47:50:     ^
+2026-04-05 20:47:50: Error: Transform failed with 1 error:
+2026-04-05 20:47:50: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:50:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:50:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:50:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:50:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:50:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:50:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:50:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:50:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:50:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:50:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:50:   name: 'TransformError'
+2026-04-05 20:47:50: }
+2026-04-05 20:47:50: 
+2026-04-05 20:47:50: Node.js v24.14.0
+2026-04-05 20:47:54: 
+2026-04-05 20:47:54: node:internal/modules/run_main:107
+2026-04-05 20:47:54:     triggerUncaughtException(
+2026-04-05 20:47:54:     ^
+2026-04-05 20:47:54: Error: Transform failed with 1 error:
+2026-04-05 20:47:54: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:54:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:54:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:54:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:54:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:54:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:54:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:54:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:54:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:54:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:54:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:54:   name: 'TransformError'
+2026-04-05 20:47:54: }
+2026-04-05 20:47:54: 
+2026-04-05 20:47:54: Node.js v24.14.0
+2026-04-05 20:47:58: 
+2026-04-05 20:47:58: node:internal/modules/run_main:107
+2026-04-05 20:47:58:     triggerUncaughtException(
+2026-04-05 20:47:58:     ^
+2026-04-05 20:47:58: Error: Transform failed with 1 error:
+2026-04-05 20:47:58: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:47:58:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:47:58:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:47:58:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:47:58:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:47:58:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:47:58:     at Socket.emit (node:events:508:28)
+2026-04-05 20:47:58:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:47:58:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:47:58:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:47:58:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:47:58:   name: 'TransformError'
+2026-04-05 20:47:58: }
+2026-04-05 20:47:58: 
+2026-04-05 20:47:58: Node.js v24.14.0
+2026-04-05 20:48:02: 
+2026-04-05 20:48:02: node:internal/modules/run_main:107
+2026-04-05 20:48:02:     triggerUncaughtException(
+2026-04-05 20:48:02:     ^
+2026-04-05 20:48:02: Error: Transform failed with 1 error:
+2026-04-05 20:48:02: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:02:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:02:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:02:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:02:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:02:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:02:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:02:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:02:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:02:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:02:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:02:   name: 'TransformError'
+2026-04-05 20:48:02: }
+2026-04-05 20:48:02: 
+2026-04-05 20:48:02: Node.js v24.14.0
+2026-04-05 20:48:06: 
+2026-04-05 20:48:06: node:internal/modules/run_main:107
+2026-04-05 20:48:06:     triggerUncaughtException(
+2026-04-05 20:48:06:     ^
+2026-04-05 20:48:06: Error: Transform failed with 1 error:
+2026-04-05 20:48:06: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:06:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:06:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:06:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:06:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:06:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:06:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:06:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:06:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:06:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:06:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:06:   name: 'TransformError'
+2026-04-05 20:48:06: }
+2026-04-05 20:48:06: 
+2026-04-05 20:48:06: Node.js v24.14.0
+2026-04-05 20:48:10: 
+2026-04-05 20:48:10: node:internal/modules/run_main:107
+2026-04-05 20:48:10:     triggerUncaughtException(
+2026-04-05 20:48:10:     ^
+2026-04-05 20:48:10: Error: Transform failed with 1 error:
+2026-04-05 20:48:10: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:10:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:10:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:10:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:10:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:10:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:10:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:10:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:10:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:10:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:10:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:10:   name: 'TransformError'
+2026-04-05 20:48:10: }
+2026-04-05 20:48:10: 
+2026-04-05 20:48:10: Node.js v24.14.0
+2026-04-05 20:48:14: 
+2026-04-05 20:48:14: node:internal/modules/run_main:107
+2026-04-05 20:48:14:     triggerUncaughtException(
+2026-04-05 20:48:14:     ^
+2026-04-05 20:48:14: Error: Transform failed with 1 error:
+2026-04-05 20:48:14: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:14:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:14:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:14:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:14:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:14:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:14:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:14:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:14:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:14:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:14:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:14:   name: 'TransformError'
+2026-04-05 20:48:14: }
+2026-04-05 20:48:14: 
+2026-04-05 20:48:14: Node.js v24.14.0
+2026-04-05 20:48:18: 
+2026-04-05 20:48:18: node:internal/modules/run_main:107
+2026-04-05 20:48:18:     triggerUncaughtException(
+2026-04-05 20:48:18:     ^
+2026-04-05 20:48:18: Error: Transform failed with 1 error:
+2026-04-05 20:48:18: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:18:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:18:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:18:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:18:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:18:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:18:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:18:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:18:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:18:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:18:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:18:   name: 'TransformError'
+2026-04-05 20:48:18: }
+2026-04-05 20:48:18: 
+2026-04-05 20:48:18: Node.js v24.14.0
+2026-04-05 20:48:22: 
+2026-04-05 20:48:22: node:internal/modules/run_main:107
+2026-04-05 20:48:22:     triggerUncaughtException(
+2026-04-05 20:48:22:     ^
+2026-04-05 20:48:22: Error: Transform failed with 1 error:
+2026-04-05 20:48:22: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:22:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:22:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:22:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:22:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:22:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:22:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:22:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:22:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:22:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:22:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:22:   name: 'TransformError'
+2026-04-05 20:48:22: }
+2026-04-05 20:48:22: 
+2026-04-05 20:48:22: Node.js v24.14.0
+2026-04-05 20:48:26: 
+2026-04-05 20:48:26: node:internal/modules/run_main:107
+2026-04-05 20:48:26:     triggerUncaughtException(
+2026-04-05 20:48:26:     ^
+2026-04-05 20:48:26: Error: Transform failed with 1 error:
+2026-04-05 20:48:26: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:26:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:26:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:26:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:26:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:26:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:26:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:26:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:26:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:26:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:26:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:26:   name: 'TransformError'
+2026-04-05 20:48:26: }
+2026-04-05 20:48:26: 
+2026-04-05 20:48:26: Node.js v24.14.0
+2026-04-05 20:48:31: 
+2026-04-05 20:48:31: node:internal/modules/run_main:107
+2026-04-05 20:48:31:     triggerUncaughtException(
+2026-04-05 20:48:31:     ^
+2026-04-05 20:48:31: Error: Transform failed with 1 error:
+2026-04-05 20:48:31: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:31:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:31:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:31:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:31:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:31:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:31:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:31:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:31:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:31:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:31:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:31:   name: 'TransformError'
+2026-04-05 20:48:31: }
+2026-04-05 20:48:31: 
+2026-04-05 20:48:31: Node.js v24.14.0
+2026-04-05 20:48:35: 
+2026-04-05 20:48:35: node:internal/modules/run_main:107
+2026-04-05 20:48:35:     triggerUncaughtException(
+2026-04-05 20:48:35:     ^
+2026-04-05 20:48:35: Error: Transform failed with 1 error:
+2026-04-05 20:48:35: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:35:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:35:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:35:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:35:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:35:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:35:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:35:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:35:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:35:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:35:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:35:   name: 'TransformError'
+2026-04-05 20:48:35: }
+2026-04-05 20:48:35: 
+2026-04-05 20:48:35: Node.js v24.14.0
+2026-04-05 20:48:39: 
+2026-04-05 20:48:39: node:internal/modules/run_main:107
+2026-04-05 20:48:39:     triggerUncaughtException(
+2026-04-05 20:48:39:     ^
+2026-04-05 20:48:39: Error: Transform failed with 1 error:
+2026-04-05 20:48:39: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:39:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:39:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:39:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:39:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:39:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:39:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:39:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:39:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:39:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:39:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:39:   name: 'TransformError'
+2026-04-05 20:48:39: }
+2026-04-05 20:48:39: 
+2026-04-05 20:48:39: Node.js v24.14.0
+2026-04-05 20:48:43: 
+2026-04-05 20:48:43: node:internal/modules/run_main:107
+2026-04-05 20:48:43:     triggerUncaughtException(
+2026-04-05 20:48:43:     ^
+2026-04-05 20:48:43: Error: Transform failed with 1 error:
+2026-04-05 20:48:43: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:43:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:43:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:43:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:43:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:43:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:43:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:43:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:43:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:43:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:43:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:43:   name: 'TransformError'
+2026-04-05 20:48:43: }
+2026-04-05 20:48:43: 
+2026-04-05 20:48:43: Node.js v24.14.0
+2026-04-05 20:48:47: 
+2026-04-05 20:48:47: node:internal/modules/run_main:107
+2026-04-05 20:48:47:     triggerUncaughtException(
+2026-04-05 20:48:47:     ^
+2026-04-05 20:48:47: Error: Transform failed with 1 error:
+2026-04-05 20:48:47: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:47:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:47:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:47:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:47:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:47:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:47:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:47:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:47:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:47:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:47:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:47:   name: 'TransformError'
+2026-04-05 20:48:47: }
+2026-04-05 20:48:47: 
+2026-04-05 20:48:47: Node.js v24.14.0
+2026-04-05 20:48:51: 
+2026-04-05 20:48:51: node:internal/modules/run_main:107
+2026-04-05 20:48:51:     triggerUncaughtException(
+2026-04-05 20:48:51:     ^
+2026-04-05 20:48:51: Error: Transform failed with 1 error:
+2026-04-05 20:48:51: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:51:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:51:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:51:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:51:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:51:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:51:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:51:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:51:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:51:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:51:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:51:   name: 'TransformError'
+2026-04-05 20:48:51: }
+2026-04-05 20:48:51: 
+2026-04-05 20:48:51: Node.js v24.14.0
+2026-04-05 20:48:55: 
+2026-04-05 20:48:55: node:internal/modules/run_main:107
+2026-04-05 20:48:55:     triggerUncaughtException(
+2026-04-05 20:48:55:     ^
+2026-04-05 20:48:55: Error: Transform failed with 1 error:
+2026-04-05 20:48:55: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:55:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:55:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:55:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:55:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:55:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:55:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:55:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:55:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:55:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:55:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:55:   name: 'TransformError'
+2026-04-05 20:48:55: }
+2026-04-05 20:48:55: 
+2026-04-05 20:48:55: Node.js v24.14.0
+2026-04-05 20:48:59: 
+2026-04-05 20:48:59: node:internal/modules/run_main:107
+2026-04-05 20:48:59:     triggerUncaughtException(
+2026-04-05 20:48:59:     ^
+2026-04-05 20:48:59: Error: Transform failed with 1 error:
+2026-04-05 20:48:59: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:48:59:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:48:59:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:48:59:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:48:59:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:48:59:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:48:59:     at Socket.emit (node:events:508:28)
+2026-04-05 20:48:59:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:48:59:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:48:59:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:48:59:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:48:59:   name: 'TransformError'
+2026-04-05 20:48:59: }
+2026-04-05 20:48:59: 
+2026-04-05 20:48:59: Node.js v24.14.0
+2026-04-05 20:49:03: 
+2026-04-05 20:49:03: node:internal/modules/run_main:107
+2026-04-05 20:49:03:     triggerUncaughtException(
+2026-04-05 20:49:03:     ^
+2026-04-05 20:49:03: Error: Transform failed with 1 error:
+2026-04-05 20:49:03: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:03:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:03:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:03:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:03:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:03:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:03:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:03:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:03:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:03:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:03:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:03:   name: 'TransformError'
+2026-04-05 20:49:03: }
+2026-04-05 20:49:03: 
+2026-04-05 20:49:03: Node.js v24.14.0
+2026-04-05 20:49:07: 
+2026-04-05 20:49:07: node:internal/modules/run_main:107
+2026-04-05 20:49:07:     triggerUncaughtException(
+2026-04-05 20:49:07:     ^
+2026-04-05 20:49:07: Error: Transform failed with 1 error:
+2026-04-05 20:49:07: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:07:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:07:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:07:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:07:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:07:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:07:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:07:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:07:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:07:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:07:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:07:   name: 'TransformError'
+2026-04-05 20:49:07: }
+2026-04-05 20:49:07: 
+2026-04-05 20:49:07: Node.js v24.14.0
+2026-04-05 20:49:12: 
+2026-04-05 20:49:12: node:internal/modules/run_main:107
+2026-04-05 20:49:12:     triggerUncaughtException(
+2026-04-05 20:49:12:     ^
+2026-04-05 20:49:12: Error: Transform failed with 1 error:
+2026-04-05 20:49:12: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:12:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:12:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:12:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:12:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:12:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:12:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:12:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:12:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:12:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:12:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:12:   name: 'TransformError'
+2026-04-05 20:49:12: }
+2026-04-05 20:49:12: 
+2026-04-05 20:49:12: Node.js v24.14.0
+2026-04-05 20:49:16: 
+2026-04-05 20:49:16: node:internal/modules/run_main:107
+2026-04-05 20:49:16:     triggerUncaughtException(
+2026-04-05 20:49:16:     ^
+2026-04-05 20:49:16: Error: Transform failed with 1 error:
+2026-04-05 20:49:16: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:16:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:16:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:16:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:16:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:16:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:16:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:16:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:16:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:16:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:16:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:16:   name: 'TransformError'
+2026-04-05 20:49:16: }
+2026-04-05 20:49:16: 
+2026-04-05 20:49:16: Node.js v24.14.0
+2026-04-05 20:49:20: 
+2026-04-05 20:49:20: node:internal/modules/run_main:107
+2026-04-05 20:49:20:     triggerUncaughtException(
+2026-04-05 20:49:20:     ^
+2026-04-05 20:49:20: Error: Transform failed with 1 error:
+2026-04-05 20:49:20: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:20:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:20:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:20:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:20:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:20:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:20:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:20:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:20:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:20:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:20:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:20:   name: 'TransformError'
+2026-04-05 20:49:20: }
+2026-04-05 20:49:20: 
+2026-04-05 20:49:20: Node.js v24.14.0
+2026-04-05 20:49:24: 
+2026-04-05 20:49:24: node:internal/modules/run_main:107
+2026-04-05 20:49:24:     triggerUncaughtException(
+2026-04-05 20:49:24:     ^
+2026-04-05 20:49:24: Error: Transform failed with 1 error:
+2026-04-05 20:49:24: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:24:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:24:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:24:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:24:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:24:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:24:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:24:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:24:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:24:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:24:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:24:   name: 'TransformError'
+2026-04-05 20:49:24: }
+2026-04-05 20:49:24: 
+2026-04-05 20:49:24: Node.js v24.14.0
+2026-04-05 20:49:28: 
+2026-04-05 20:49:28: node:internal/modules/run_main:107
+2026-04-05 20:49:28:     triggerUncaughtException(
+2026-04-05 20:49:28:     ^
+2026-04-05 20:49:28: Error: Transform failed with 1 error:
+2026-04-05 20:49:28: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:28:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:28:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:28:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:28:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:28:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:28:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:28:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:28:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:28:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:28:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:28:   name: 'TransformError'
+2026-04-05 20:49:28: }
+2026-04-05 20:49:28: 
+2026-04-05 20:49:28: Node.js v24.14.0
+2026-04-05 20:49:32: 
+2026-04-05 20:49:32: node:internal/modules/run_main:107
+2026-04-05 20:49:32:     triggerUncaughtException(
+2026-04-05 20:49:32:     ^
+2026-04-05 20:49:32: Error: Transform failed with 1 error:
+2026-04-05 20:49:32: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:32:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:32:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:32:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:32:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:32:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:32:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:32:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:32:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:32:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:32:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:32:   name: 'TransformError'
+2026-04-05 20:49:32: }
+2026-04-05 20:49:32: 
+2026-04-05 20:49:32: Node.js v24.14.0
+2026-04-05 20:49:36: 
+2026-04-05 20:49:36: node:internal/modules/run_main:107
+2026-04-05 20:49:36:     triggerUncaughtException(
+2026-04-05 20:49:36:     ^
+2026-04-05 20:49:36: Error: Transform failed with 1 error:
+2026-04-05 20:49:36: C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\index.ts:52:4: ERROR: Top-level await is currently not supported with the "cjs" output format
+2026-04-05 20:49:36:     at failureErrorWithLog (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1748:15)
+2026-04-05 20:49:36:     at C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:1017:50
+2026-04-05 20:49:36:     at responseCallbacks.<computed> (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:884:9)
+2026-04-05 20:49:36:     at handleIncomingPacket (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:939:12)
+2026-04-05 20:49:36:     at Socket.readFromStdout (C:\Billy\Asisteme\AAAProyectos\AAAntigravity\Telegram Dev\node_modules\.pnpm\esbuild@0.27.7\node_modules\esbuild\lib\main.js:862:7)
+2026-04-05 20:49:36:     at Socket.emit (node:events:508:28)
+2026-04-05 20:49:36:     at addChunk (node:internal/streams/readable:563:12)
+2026-04-05 20:49:36:     at readableAddChunkPushByteMode (node:internal/streams/readable:514:3)
+2026-04-05 20:49:36:     at Readable.push (node:internal/streams/readable:394:5)
+2026-04-05 20:49:36:     at Pipe.onStreamRead (node:internal/stream_base_commons:189:23) {
+2026-04-05 20:49:36:   name: 'TransformError'
+2026-04-05 20:49:36: }
+2026-04-05 20:49:36: 
+2026-04-05 20:49:36: Node.js v24.14.0
+2026-04-05 20:54:02: [EXEC ERROR]: Error ejecutando comando: Command failed: git add . && git commit -m "Agregado script de configuración WinRM segura y otros cambios"
+2026-04-05 20:54:02: En l�nea: 1 Car�cter: 11
+2026-04-05 20:54:02: + git add . && git commit -m "Agregado script de configuraci�n WinRM se ...
+2026-04-05 20:54:02: +           ~~
+2026-04-05 20:54:02: El token '&&' no es un separador de instrucciones v�lido en esta versi�n.
+2026-04-05 20:54:02:     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+2026-04-05 20:54:02:     + FullyQualifiedErrorId : InvalidEndOfLine
+2026-04-05 20:54:02:  
+2026-04-05 20:54:02: 
