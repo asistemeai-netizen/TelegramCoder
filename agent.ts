@@ -27,11 +27,11 @@ const bot   = new TelegramBot(token, { polling: false });
 const genAI = new GoogleGenerativeAI(geminiKey);
 const execAsyncShell = promisify(exec);
 
-let isActive   = false; // ¿Esta PC está respondiendo en Telegram ahora mismo?
+let isActive   = false;
 let currentCwd = process.cwd();
 let chatHistory: any;
 let model: any;
-let retryTimer: ReturnType<typeof setTimeout> | null = null;
+
 
 // ============================================================
 // GEMINI SESSION
@@ -156,17 +156,6 @@ async function releaseToMaster(chatId?: number) {
   console.log(`✅ DB actualizada: ${masterName} activado. Esta PC dormida.\n`);
 }
 
-
-                  error?.message?.includes('409');
-    if (is409 && !isActive) {
-      await bot.stopPolling().catch(() => {});
-      scheduleRetry();
-    }
-  });
-
-  // Volvemos al modo de competencia pasiva (retry loop)
-  scheduleRetry(1000);
-}
 
 // ============================================================
 // LÓGICA DE IA
